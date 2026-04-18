@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="1024" height="1024" alt="Cinder" src="https://github.com/user-attachments/assets/339e224b-8888-4ba6-8364-431a726b3e64" />
+  <img width="320" alt="Cinder" src="https://github.com/user-attachments/assets/339e224b-8888-4ba6-8364-431a726b3e64" />
 </p>
 
 <h1 align="center">Cinder</h1>
