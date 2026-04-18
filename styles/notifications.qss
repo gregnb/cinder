@@ -1,0 +1,111 @@
+#notificationFlyout {
+    background: {{bgGradientEnd}};
+    border: 1px solid {{borderSubtle}};
+    border-radius: {{cardRadius}}px;
+}
+
+#notificationFlyoutTitle {
+    color: {{textPrimary}};
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+}
+
+#notificationFlyoutMarkReadBtn {
+    color: {{textTertiary}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    padding: 4px 8px;
+}
+
+#notificationFlyoutMarkReadBtn:hover {
+    color: {{textHover}};
+}
+
+#notificationFlyoutSeparator {
+    background: {{borderSubtle}};
+}
+
+#notificationFlyoutScrollArea,
+#notificationFlyoutViewport,
+#notificationFlyoutList {
+    background: transparent;
+    border: none;
+}
+
+#notificationFlyoutScrollArea QScrollBar:vertical {
+    width: 4px;
+    background: transparent;
+}
+
+#notificationFlyoutScrollArea QScrollBar::handle:vertical {
+    background: rgba(255,255,255,0.15);
+    border-radius: 2px;
+}
+
+#notificationFlyoutScrollArea QScrollBar::add-line:vertical,
+#notificationFlyoutScrollArea QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+#notificationFlyoutEmptyLabel {
+    color: {{textSecondary}};
+    font-size: 14px;
+    background: transparent;
+}
+
+#notificationFlyoutRow {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+}
+
+#notificationFlyoutRow[isRead="false"] {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+#notificationFlyoutRow[hovered="true"] {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+#notificationFlyoutDot {
+    background: {{solanaCyan}};
+    border-radius: 4px;
+    border: none;
+}
+
+#notificationFlyoutDot[isRead="true"] {
+    background: transparent;
+}
+
+QLabel[uiClass="notificationFlyoutReceivedLabel"],
+QLabel[uiClass="notificationFlyoutSymbolLabel"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="notificationFlyoutInlineIcon"] {
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="notificationFlyoutBodyLabel"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="notificationFlyoutTimeLabel"] {
+    color: {{textTertiary}};
+    font-family: {{fontFamily}};
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}

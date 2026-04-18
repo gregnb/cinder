@@ -1,0 +1,4515 @@
+{
+  "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+  "metadata": {
+    "name": "lb_clmm",
+    "version": "0.11.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "add_liquidity",
+      "discriminator": [
+        181,
+        157,
+        89,
+        67,
+        143,
+        182,
+        52,
+        72
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "add_liquidity2",
+      "discriminator": [
+        228,
+        162,
+        78,
+        28,
+        70,
+        219,
+        116,
+        115
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "add_liquidity_by_strategy",
+      "discriminator": [
+        7,
+        3,
+        150,
+        127,
+        148,
+        40,
+        61,
+        200
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "add_liquidity_by_strategy2",
+      "discriminator": [
+        3,
+        221,
+        149,
+        218,
+        111,
+        141,
+        118,
+        213
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "add_liquidity_by_strategy_one_side",
+      "discriminator": [
+        41,
+        5,
+        238,
+        175,
+        100,
+        225,
+        6,
+        205
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "add_liquidity_by_weight",
+      "discriminator": [
+        28,
+        140,
+        238,
+        99,
+        231,
+        162,
+        21,
+        149
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "add_liquidity_one_side",
+      "discriminator": [
+        94,
+        155,
+        103,
+        151,
+        70,
+        95,
+        220,
+        165
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "add_liquidity_one_side_precise",
+      "discriminator": [
+        161,
+        194,
+        103,
+        84,
+        171,
+        71,
+        250,
+        154
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "add_liquidity_one_side_precise2",
+      "discriminator": [
+        33,
+        51,
+        163,
+        201,
+        117,
+        98,
+        125,
+        231
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "claim_fee",
+      "discriminator": [
+        169,
+        32,
+        79,
+        137,
+        136,
+        232,
+        70,
+        137
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "claim_fee2",
+      "discriminator": [
+        112,
+        191,
+        101,
+        171,
+        28,
+        144,
+        127,
+        187
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "claim_reward",
+      "discriminator": [
+        149,
+        95,
+        181,
+        242,
+        94,
+        90,
+        158,
+        162
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "reward_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reward_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "claim_reward2",
+      "discriminator": [
+        190,
+        3,
+        127,
+        119,
+        178,
+        87,
+        157,
+        183
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "reward_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reward_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "close_claim_fee_operator_account",
+      "discriminator": [
+        184,
+        213,
+        88,
+        31,
+        179,
+        101,
+        130,
+        36
+      ],
+      "accounts": [
+        {
+          "name": "claim_fee_operator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "close_operator_account",
+      "discriminator": [
+        171,
+        9,
+        213,
+        74,
+        120,
+        23,
+        3,
+        29
+      ],
+      "accounts": [
+        {
+          "name": "operator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "close_position",
+      "discriminator": [
+        123,
+        134,
+        81,
+        0,
+        49,
+        68,
+        98,
+        98
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "close_position2",
+      "discriminator": [
+        174,
+        90,
+        35,
+        115,
+        186,
+        40,
+        147,
+        226
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "close_position_if_empty",
+      "discriminator": [
+        59,
+        124,
+        212,
+        118,
+        91,
+        152,
+        110,
+        157
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "close_preset_parameter",
+      "discriminator": [
+        4,
+        148,
+        145,
+        100,
+        134,
+        26,
+        181,
+        61
+      ],
+      "accounts": [
+        {
+          "name": "preset_parameter",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "close_preset_parameter2",
+      "discriminator": [
+        39,
+        25,
+        95,
+        107,
+        116,
+        17,
+        115,
+        28
+      ],
+      "accounts": [
+        {
+          "name": "preset_parameter",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "close_token_badge",
+      "discriminator": [
+        108,
+        146,
+        86,
+        110,
+        179,
+        254,
+        10,
+        104
+      ],
+      "accounts": [
+        {
+          "name": "token_badge",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "create_operator_account",
+      "discriminator": [
+        221,
+        64,
+        246,
+        149,
+        240,
+        153,
+        229,
+        163
+      ],
+      "accounts": [
+        {
+          "name": "operator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelisted_signer",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "decrease_position_length",
+      "discriminator": [
+        194,
+        219,
+        136,
+        32,
+        25,
+        96,
+        105,
+        37
+      ],
+      "accounts": [
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "for_idl_type_generation_do_not_call",
+      "discriminator": [
+        180,
+        105,
+        69,
+        80,
+        95,
+        50,
+        73,
+        108
+      ],
+      "accounts": [
+        {
+          "name": "dummy_zc_account",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "fund_reward",
+      "discriminator": [
+        188,
+        50,
+        249,
+        165,
+        93,
+        151,
+        38,
+        63
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reward_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reward_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "funder_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "funder",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "bin_array",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "go_to_a_bin",
+      "discriminator": [
+        146,
+        72,
+        174,
+        224,
+        40,
+        253,
+        84,
+        174
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "from_bin_array",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "to_bin_array",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "increase_oracle_length",
+      "discriminator": [
+        190,
+        61,
+        125,
+        87,
+        103,
+        79,
+        158,
+        173
+      ],
+      "accounts": [
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "funder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "increase_position_length",
+      "discriminator": [
+        80,
+        83,
+        117,
+        211,
+        66,
+        13,
+        33,
+        149
+      ],
+      "accounts": [
+        {
+          "name": "funder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "increase_position_length2",
+      "discriminator": [
+        255,
+        210,
+        204,
+        71,
+        115,
+        137,
+        225,
+        113
+      ],
+      "accounts": [
+        {
+          "name": "funder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_bin_array",
+      "discriminator": [
+        35,
+        86,
+        19,
+        185,
+        78,
+        212,
+        75,
+        211
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "funder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_bin_array_bitmap_extension",
+      "discriminator": [
+        47,
+        157,
+        226,
+        180,
+        12,
+        240,
+        33,
+        71
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "funder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_customizable_permissionless_lb_pair",
+      "discriminator": [
+        46,
+        39,
+        41,
+        135,
+        111,
+        183,
+        200,
+        64
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_mint_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "funder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_customizable_permissionless_lb_pair2",
+      "discriminator": [
+        243,
+        73,
+        129,
+        126,
+        51,
+        19,
+        241,
+        107
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_mint_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "funder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "token_badge_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_badge_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_lb_pair",
+      "discriminator": [
+        45,
+        154,
+        237,
+        210,
+        221,
+        15,
+        166,
+        92
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_mint_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "preset_parameter",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "funder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_lb_pair2",
+      "discriminator": [
+        73,
+        59,
+        36,
+        120,
+        237,
+        83,
+        108,
+        198
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_mint_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "preset_parameter",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "funder",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "token_badge_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_badge_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_permission_lb_pair",
+      "discriminator": [
+        108,
+        102,
+        213,
+        85,
+        251,
+        3,
+        53,
+        21
+      ],
+      "accounts": [
+        {
+          "name": "base",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_mint_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_badge_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_badge_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_y",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_position",
+      "discriminator": [
+        219,
+        192,
+        234,
+        71,
+        190,
+        191,
+        102,
+        80
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_position2",
+      "discriminator": [
+        143,
+        19,
+        242,
+        145,
+        213,
+        15,
+        104,
+        115
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_position_by_operator",
+      "discriminator": [
+        251,
+        189,
+        190,
+        244,
+        117,
+        254,
+        35,
+        148
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "base",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "operator_token_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner_token_x",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_position_pda",
+      "discriminator": [
+        46,
+        82,
+        125,
+        146,
+        85,
+        141,
+        228,
+        153
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "base",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_preset_parameter",
+      "discriminator": [
+        66,
+        188,
+        71,
+        211,
+        98,
+        109,
+        14,
+        186
+      ],
+      "accounts": [
+        {
+          "name": "preset_parameter",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_reward",
+      "discriminator": [
+        95,
+        135,
+        192,
+        196,
+        242,
+        129,
+        230,
+        68
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reward_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reward_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_badge",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_token_badge",
+      "discriminator": [
+        253,
+        77,
+        205,
+        95,
+        27,
+        224,
+        89,
+        223
+      ],
+      "accounts": [
+        {
+          "name": "token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_badge",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "migrate_position",
+      "discriminator": [
+        15,
+        132,
+        59,
+        50,
+        199,
+        6,
+        251,
+        46
+      ],
+      "accounts": [
+        {
+          "name": "position_v2",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "position_v1",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "signer_and_payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent_receiver",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "rebalance_liquidity",
+      "discriminator": [
+        92,
+        4,
+        176,
+        193,
+        119,
+        185,
+        83,
+        9
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rent_payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "remove_all_liquidity",
+      "discriminator": [
+        10,
+        51,
+        61,
+        35,
+        112,
+        105,
+        24,
+        85
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "remove_liquidity",
+      "discriminator": [
+        80,
+        85,
+        209,
+        72,
+        24,
+        206,
+        177,
+        108
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "remove_liquidity2",
+      "discriminator": [
+        230,
+        215,
+        82,
+        127,
+        241,
+        101,
+        227,
+        146
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "remove_liquidity_by_range",
+      "discriminator": [
+        26,
+        82,
+        102,
+        152,
+        240,
+        74,
+        105,
+        26
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "remove_liquidity_by_range2",
+      "discriminator": [
+        204,
+        2,
+        195,
+        145,
+        53,
+        145,
+        145,
+        205
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "sender",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "reset_bin_array_tombstone_fields",
+      "discriminator": [
+        54,
+        90,
+        252,
+        63,
+        41,
+        206,
+        63,
+        63
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bin_array",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "reset_pool_tombstone_fields",
+      "discriminator": [
+        246,
+        109,
+        19,
+        120,
+        108,
+        113,
+        68,
+        252
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "reset_position_tombstone_fields",
+      "discriminator": [
+        206,
+        6,
+        51,
+        218,
+        211,
+        30,
+        159,
+        84
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "set_activation_point",
+      "discriminator": [
+        91,
+        249,
+        15,
+        165,
+        26,
+        129,
+        254,
+        125
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "set_pair_status",
+      "discriminator": [
+        67,
+        248,
+        231,
+        137,
+        154,
+        149,
+        217,
+        174
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "set_pair_status_permissionless",
+      "discriminator": [
+        78,
+        59,
+        152,
+        211,
+        70,
+        183,
+        46,
+        208
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "set_pre_activation_duration",
+      "discriminator": [
+        165,
+        61,
+        201,
+        244,
+        130,
+        159,
+        22,
+        100
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "set_pre_activation_swap_address",
+      "discriminator": [
+        57,
+        139,
+        47,
+        123,
+        216,
+        80,
+        223,
+        10
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "swap",
+      "discriminator": [
+        248,
+        198,
+        158,
+        145,
+        225,
+        117,
+        135,
+        200
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_out",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "host_fee_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "swap2",
+      "discriminator": [
+        65,
+        75,
+        63,
+        76,
+        235,
+        91,
+        91,
+        136
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_out",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "host_fee_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "swap_exact_out",
+      "discriminator": [
+        250,
+        73,
+        101,
+        33,
+        38,
+        207,
+        75,
+        184
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_out",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "host_fee_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "swap_exact_out2",
+      "discriminator": [
+        43,
+        215,
+        247,
+        132,
+        137,
+        60,
+        243,
+        81
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_out",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "host_fee_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "swap_with_price_impact",
+      "discriminator": [
+        56,
+        173,
+        230,
+        208,
+        173,
+        228,
+        156,
+        205
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_out",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "host_fee_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "swap_with_price_impact2",
+      "discriminator": [
+        74,
+        98,
+        192,
+        214,
+        177,
+        51,
+        75,
+        51
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_bitmap_extension",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_token_out",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "oracle",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "host_fee_in",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "update_base_fee_parameters",
+      "discriminator": [
+        75,
+        168,
+        223,
+        161,
+        16,
+        195,
+        3,
+        47
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "update_dynamic_fee_parameters",
+      "discriminator": [
+        92,
+        161,
+        46,
+        246,
+        255,
+        189,
+        22,
+        22
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "update_fees_and_reward2",
+      "discriminator": [
+        32,
+        142,
+        184,
+        154,
+        103,
+        65,
+        184,
+        88
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "update_fees_and_rewards",
+      "discriminator": [
+        154,
+        230,
+        250,
+        13,
+        236,
+        209,
+        75,
+        223
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_lower",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bin_array_upper",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "update_position_operator",
+      "discriminator": [
+        202,
+        184,
+        103,
+        143,
+        180,
+        191,
+        116,
+        217
+      ],
+      "accounts": [
+        {
+          "name": "position",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "update_reward_duration",
+      "discriminator": [
+        138,
+        174,
+        196,
+        169,
+        213,
+        235,
+        254,
+        107
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "bin_array",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "update_reward_funder",
+      "discriminator": [
+        211,
+        28,
+        48,
+        32,
+        215,
+        160,
+        35,
+        23
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdraw_ineligible_reward",
+      "discriminator": [
+        148,
+        206,
+        42,
+        195,
+        247,
+        49,
+        103,
+        8
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reward_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reward_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "funder_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "funder",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "bin_array",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdraw_protocol_fee",
+      "discriminator": [
+        158,
+        201,
+        158,
+        189,
+        33,
+        93,
+        162,
+        103
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_x_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "receiver_token_x",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "receiver_token_y",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_x_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_y_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "zap_protocol_fee",
+      "discriminator": [
+        213,
+        155,
+        187,
+        34,
+        56,
+        182,
+        91,
+        240
+      ],
+      "accounts": [
+        {
+          "name": "lb_pair",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reserve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "receiver_token",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "signer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "sysvar_instructions",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    }
+  ]
+}

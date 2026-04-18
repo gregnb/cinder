@@ -1,0 +1,260 @@
+/* ── New Transaction Page ────────────────────────────────────── */
+
+#newTxTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: {{textPrimary}};
+}
+
+#txCardTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: {{textPrimary}};
+    background: transparent;
+}
+
+#txCardSubtitle {
+    font-size: 14px;
+    color: {{textTertiary}};
+    background: transparent;
+}
+
+/* ── Transaction Form ────────────────────────────────────────── */
+
+#txFormTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: {{textPrimary}};
+    background: transparent;
+}
+
+#txFormLabel {
+    color: {{textTertiary}};
+    font-size: 13px;
+    font-weight: 500;
+    background: transparent;
+}
+
+#txFormInput {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 12px;
+    color: {{textPrimary}};
+    padding: 12px 16px;
+    font-size: 15px;
+    font-family: {{fontFamily}};
+    selection-background-color: rgba(100, 150, 255, 0.3);
+}
+
+#txFormInput:focus {
+    border: 1px solid rgba(100, 150, 255, 0.5);
+}
+
+/* ── Token Dropdown Widget ───────────────────────────────────── */
+
+#tokenDropdownBtn {
+    background: {{dropdownBg}};
+    border: 1px solid {{dropdownBorder}};
+    border-radius: 12px;
+    padding: 10px 16px;
+    text-align: left;
+}
+
+#tokenDropdownBtn:hover {
+    border: 1px solid {{dropdownBorderHover}};
+}
+
+#tokenDropdownBtn:focus {
+    outline: none;
+}
+
+#tokenDropdownIcon,
+#tokenDropdownChevron {
+    background: transparent;
+}
+
+#tokenDropdownName {
+    color: {{textPrimary}};
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+}
+
+#tokenDropdownBalance {
+    color: {{textTertiary}};
+    font-size: 14px;
+    background: transparent;
+}
+
+#tokenDropdownSearchInput {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid rgba(100,100,150,0.25);
+    border-radius: 6px;
+    color: {{textPrimary}};
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+#tokenDropdownSearchInput:focus {
+    border: 1px solid {{dropdownBorderHover}};
+}
+
+#tokenDropdownList {
+    background: {{dropdownListBg}};
+    color: {{textPrimary}};
+    border: 1px solid {{dropdownListBorder}};
+    border-radius: 10px;
+    padding: 6px;
+    outline: none;
+}
+
+#tokenDropdownList::item {
+    padding: 2px 4px;
+    border-radius: 6px;
+}
+
+#tokenDropdownList::item:hover {
+    background: {{dropdownItemHover}};
+}
+
+#tokenDropdownList::item:selected {
+    background: {{dropdownItemSelected}};
+}
+
+#tokenDropdownList QScrollBar:vertical {
+    background: {{dropdownListBg}};
+    width: 8px;
+    border-radius: 4px;
+    margin: 4px 2px;
+}
+
+#tokenDropdownList QScrollBar::handle:vertical {
+    background: {{dropdownScrollHandle}};
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+#tokenDropdownList QScrollBar::handle:vertical:hover {
+    background: {{dropdownScrollHover}};
+}
+
+#tokenDropdownList QScrollBar::add-line:vertical,
+#tokenDropdownList QScrollBar::sub-line:vertical,
+#tokenDropdownList QScrollBar::add-page:vertical,
+#tokenDropdownList QScrollBar::sub-page:vertical {
+    background: none;
+    height: 0px;
+}
+
+#tokenDropdownRow,
+#tokenDropdownRowIcon,
+#tokenDropdownRowName,
+#tokenDropdownRowBalance {
+    background: transparent;
+}
+
+#tokenDropdownRowName {
+    color: {{textPrimary}};
+    font-size: 14px;
+}
+
+#tokenDropdownRowBalance {
+    color: {{textTertiary}};
+    font-size: 13px;
+}
+
+#tokenDropdownEmptyLabel {
+    color: {{textPrimary}};
+    font-size: 14px;
+    font-weight: 700;
+    background: transparent;
+}
+
+/* ── Fee Info ────────────────────────────────────────────────── */
+
+#txFeeInfo {
+    color: rgba(59, 130, 246, 0.8);
+    font-size: 12px;
+    background: transparent;
+    padding: 2px 0;
+}
+
+/* ── Speed Selector ──────────────────────────────────────────── */
+
+#speedButtonLabel {
+    color: {{textPrimary}};
+    font-size: 13px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+    background: transparent;
+    border: none;
+}
+
+#speedButton {
+    background: rgba(30, 31, 55, 0.6);
+    color: {{textSecondary}};
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: {{fontFamily}};
+}
+
+#speedButton:hover {
+    background: rgba(30, 31, 55, 0.8);
+    color: {{textPrimary}};
+}
+
+#speedButtonActive {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1e2d4d, stop:1 #223255);
+    color: {{textPrimary}};
+    border: 1px solid #3a5a8a;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+}
+
+#speedButtonActive:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #243560, stop:1 #283a68);
+    border: 1px solid #4a6a9a;
+}
+
+/* ── Review Button ───────────────────────────────────────────── */
+
+#reviewTxButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1a2b42, stop:0.5 #1e2f48, stop:1 #1c2d45);
+    color: {{textPrimary}};
+    border: 1px solid #2a4a6a;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+}
+
+#reviewTxButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #213552, stop:0.5 #253a58, stop:1 #233855);
+    border: 1px solid #3a5a8a;
+}
+
+/* ── Back Button ─────────────────────────────────────────────── */
+
+#txBackButton {
+    background: transparent;
+    color: {{textSecondary}};
+    border: none;
+    font-size: 14px;
+    font-family: {{fontFamily}};
+    padding: 4px 8px 4px 0px;
+}
+
+#txBackButton:hover {
+    color: {{textPrimary}};
+}

@@ -1,0 +1,121 @@
+#accountSelectorBtn {
+    background: rgba(26, 30, 56, 0.6);
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+#accountSelectorBtn:hover {
+    background: rgba(37, 48, 80, 0.8);
+    border: 1px solid rgba(100, 150, 255, 0.3);
+}
+
+#accountSelectorAddressLabel {
+    color: rgba(255,255,255,0.85);
+    font-size: 12px;
+    font-weight: 500;
+    background: transparent;
+}
+
+#accountSelectorCopyIcon,
+#accountSelectorChevron {
+    background: transparent;
+}
+
+#accountPopup {
+    background: {{dropdownListBg}};
+    border: 1px solid rgba(100,100,150,0.3);
+    border-radius: 12px;
+}
+
+#accountPopupScrollArea,
+#accountPopupScrollArea > QWidget,
+#accountPopupScrollContent,
+#accountPopupChildContainer {
+    background: transparent;
+    border: none;
+}
+
+#accountPopupScrollArea QScrollBar:vertical {
+    background: transparent;
+    width: 6px;
+    margin: 4px 1px;
+}
+
+#accountPopupScrollArea QScrollBar::handle:vertical {
+    background: rgba(255,255,255,0.15);
+    border-radius: 3px;
+    min-height: 20px;
+}
+
+#accountPopupScrollArea QScrollBar::handle:vertical:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+#accountPopupScrollArea QScrollBar::add-line:vertical,
+#accountPopupScrollArea QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+#accountPopupScrollArea QScrollBar::add-page:vertical,
+#accountPopupScrollArea QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QLabel[uiClass="accountPopupNameLabel"] {
+    color: {{textPrimary}};
+    font-size: 13px;
+    font-weight: 500;
+    background: transparent;
+}
+
+QLabel[uiClass="accountPopupImportedTag"] {
+    color: rgba(255,255,255,0.35);
+    font-size: 10px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 4px;
+    padding: 1px 6px;
+}
+
+QLabel[uiClass="accountPopupAddressLabel"] {
+    color: rgba(255,255,255,0.45);
+    font-size: 11px;
+    background: transparent;
+}
+
+QLabel[uiClass="accountPopupConnectorLabel"] {
+    background: transparent;
+}
+
+#accountPopupAddAccountBtn {
+    background: transparent;
+    color: rgba(20,241,149,0.7);
+    font-size: 11px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding-left: 36px;
+    text-align: left;
+}
+
+#accountPopupAddAccountBtn:hover {
+    background: rgba(20,241,149,0.08);
+}
+
+#accountPopupGroupSeparator,
+#accountPopupFooterDivider {
+    background: rgba(255,255,255,0.08);
+}
+
+#accountPopupAddWalletBtn {
+    background: transparent;
+    color: rgba(20,241,149,0.9);
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+#accountPopupAddWalletBtn:hover {
+    background: rgba(20,241,149,0.08);
+}

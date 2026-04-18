@@ -1,0 +1,113 @@
+#appReconnectBanner {
+    background: rgba(234, 179, 8, 0.15);
+    border-bottom: 1px solid rgba(234, 179, 8, 0.4);
+}
+
+#appReconnectBannerText {
+    color: #EAB308;
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#biometricDialogCard {
+    background: {{bgGradientEnd}};
+    border: 1px solid {{borderSubtle}};
+    border-radius: 16px;
+}
+
+#biometricDialogCard * {
+    border: none;
+}
+
+QLabel[uiClass="appModalTitle"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+}
+
+QLabel[uiClass="appModalSubtitle"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    background: transparent;
+}
+
+QLabel[uiClass="appModalSubtitle"][tone="error"] {
+    color: {{errorRed}};
+}
+
+QLabel[uiClass="appModalError"] {
+    color: {{errorRed}};
+    font-size: 12px;
+    background: transparent;
+}
+
+#biometricPasswordInput {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid {{borderSubtle}};
+    border-radius: {{smallRadius}}px;
+    padding: 10px 14px;
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    color: {{textPrimary}};
+}
+
+QPushButton[uiClass="appModalSecondaryBtn"] {
+    background: transparent;
+    border: 1px solid {{borderSubtle}};
+    border-radius: {{buttonRadius}}px;
+    padding: 8px 20px;
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    color: {{textPrimary}};
+}
+
+QPushButton[uiClass="appModalSecondaryBtn"]:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#hardwareConnectDialog {
+    background: {{bgGradientStart}};
+    border: 1px solid rgba(75, 95, 175, 0.5);
+    border-radius: 16px;
+}
+
+QLabel[uiClass="hardwareConnectTitle"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+}
+
+QLabel[uiClass="hardwareConnectTitle"][tone="error"] {
+    color: {{errorRed}};
+}
+
+QLabel[uiClass="hardwareConnectSubtitle"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    background: transparent;
+}
+
+QLabel[uiClass="hardwareConnectSubtitle"][tone="error"] {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+QPushButton[uiClass="hardwareConnectCancelBtn"] {
+    background: rgba(255, 255, 255, 0.08);
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+}
+
+QPushButton[uiClass="hardwareConnectCancelBtn"]:hover {
+    background: rgba(255, 255, 255, 0.14);
+}

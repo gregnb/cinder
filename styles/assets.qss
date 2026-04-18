@@ -1,0 +1,137 @@
+/* ── Assets Page ──────────────────────────────────────────────── */
+
+#assetCardName {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+}
+
+#assetCardPrice {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    background: transparent;
+}
+
+#assetCardStatLabel {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    background: transparent;
+}
+
+#assetCardStatValue,
+#cardHoldValue,
+#cardPriceValue {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+}
+
+#portfolioAmount {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    background: transparent;
+}
+
+#assetsContent {
+    background: {{bgGradientEnd}};
+}
+
+#assetsEmptyText {
+    color: {{textPrimary}};
+    font-size: 22px;
+    font-weight: bold;
+    background: transparent;
+}
+
+#assetsReceiveDesc {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#assetsAddrTitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#receiveAddrBox {
+    background: rgba(22, 24, 42, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 12px;
+}
+
+#receiveAddrBox QLabel {
+    background: transparent;
+    border: none;
+}
+
+#assetCard {
+    background: qlineargradient(x1:0,y1:0,x2:1,y2:1,
+        stop:0 rgba(30, 31, 55, 0.6), stop:1 rgba(25, 26, 45, 0.6));
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 20px;
+}
+
+#assetCard[hovered="true"] {
+    border: 1px solid rgba(140, 100, 230, 0.45);
+}
+
+#assetCard QLabel,
+#assetCard QFrame {
+    background: transparent;
+}
+
+#assetCardSeparator {
+    color: rgba(100, 100, 150, 0.22);
+    background: transparent;
+    min-height: 1px;
+    max-height: 1px;
+    border: none;
+}
+
+#cardIcon[fallback="true"] {
+    background: rgba(100, 100, 200, 0.3);
+    color: {{textPrimary}};
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#assetSendBtn {
+    background: qlineargradient(x1:0,y1:0,x2:1,y2:0,
+        stop:0 #7c3aed, stop:0.5 #6d5aed, stop:1 #3b82f6);
+    color: {{textPrimary}};
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#assetSendBtn:hover {
+    background: qlineargradient(x1:0,y1:0,x2:1,y2:0,
+        stop:0 #8b5cf6, stop:0.5 #7d6af6, stop:1 #60a5fa);
+}
+
+#assetReceiveBtn {
+    background: transparent;
+    color: rgba(180, 160, 255, 0.9);
+    border: 1px solid rgba(140, 100, 230, 0.5);
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#assetReceiveBtn:hover {
+    background: rgba(140, 100, 230, 0.1);
+    border: 1px solid rgba(140, 100, 230, 0.7);
+    color: {{textPrimary}};
+}

@@ -1,0 +1,12 @@
+*
+!/.gitignore
+!/feature/
+!/pivot/
+/feature/*
+!/feature/baseline/
+/feature/baseline/*
+!/feature/baseline/*.png
+/pivot/*
+!/pivot/baseline/
+/pivot/baseline/*
+!/pivot/baseline/*.png

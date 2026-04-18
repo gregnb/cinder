@@ -1,0 +1,1515 @@
+{
+  "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+  "metadata": {
+    "name": "pump",
+    "version": "0.1.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "admin_set_creator",
+      "discriminator": [
+        69,
+        25,
+        171,
+        142,
+        57,
+        239,
+        13,
+        4
+      ],
+      "accounts": [
+        {
+          "name": "admin_set_creator_authority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "admin_set_idl_authority",
+      "discriminator": [
+        8,
+        217,
+        96,
+        231,
+        144,
+        104,
+        192,
+        5
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "idl_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program_signer",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "admin_update_token_incentives",
+      "discriminator": [
+        209,
+        11,
+        115,
+        87,
+        213,
+        23,
+        124,
+        204
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "global_volume_accumulator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "global_incentive_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "buy",
+      "discriminator": [
+        102,
+        6,
+        61,
+        18,
+        1,
+        218,
+        235,
+        234
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "fee_recipient",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_user",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "creator_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "global_volume_accumulator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user_volume_accumulator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "fee_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "fee_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "buy_exact_sol_in",
+      "discriminator": [
+        56,
+        252,
+        116,
+        8,
+        158,
+        223,
+        205,
+        95
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "fee_recipient",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_user",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "creator_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "global_volume_accumulator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user_volume_accumulator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "fee_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "fee_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "claim_token_incentives",
+      "discriminator": [
+        16,
+        4,
+        71,
+        28,
+        204,
+        1,
+        40,
+        27
+      ],
+      "accounts": [
+        {
+          "name": "user",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user_ata",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "global_volume_accumulator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "global_incentive_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_volume_accumulator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associated_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "close_user_volume_accumulator",
+      "discriminator": [
+        249,
+        69,
+        164,
+        218,
+        150,
+        103,
+        84,
+        138
+      ],
+      "accounts": [
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "user_volume_accumulator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "collect_creator_fee",
+      "discriminator": [
+        20,
+        22,
+        86,
+        123,
+        198,
+        28,
+        219,
+        132
+      ],
+      "accounts": [
+        {
+          "name": "creator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "creator_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "create",
+      "discriminator": [
+        24,
+        30,
+        200,
+        40,
+        5,
+        28,
+        7,
+        119
+      ],
+      "accounts": [
+        {
+          "name": "mint",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "mint_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "mpl_token_metadata",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "metadata",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associated_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "create_v2",
+      "discriminator": [
+        214,
+        144,
+        76,
+        236,
+        95,
+        139,
+        49,
+        180
+      ],
+      "accounts": [
+        {
+          "name": "mint",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "mint_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associated_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "mayhem_program_id",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "global_params",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "sol_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mayhem_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mayhem_token_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "distribute_creator_fees",
+      "discriminator": [
+        165,
+        114,
+        103,
+        0,
+        121,
+        206,
+        247,
+        81
+      ],
+      "accounts": [
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "sharing_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "creator_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "extend_account",
+      "discriminator": [
+        234,
+        102,
+        194,
+        203,
+        150,
+        72,
+        62,
+        229
+      ],
+      "accounts": [
+        {
+          "name": "account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "get_minimum_distributable_fee",
+      "discriminator": [
+        117,
+        225,
+        127,
+        202,
+        134,
+        95,
+        68,
+        35
+      ],
+      "accounts": [
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "sharing_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "creator_vault",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "init_user_volume_accumulator",
+      "discriminator": [
+        94,
+        6,
+        202,
+        115,
+        255,
+        96,
+        232,
+        183
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "user",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user_volume_accumulator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize",
+      "discriminator": [
+        175,
+        175,
+        109,
+        31,
+        13,
+        152,
+        155,
+        237
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "migrate",
+      "discriminator": [
+        155,
+        234,
+        231,
+        146,
+        236,
+        158,
+        162,
+        30
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "withdraw_authority",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pump_amm",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool_authority",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool_authority_mint_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool_authority_wsol_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "amm_global_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "wsol_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "lp_mint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user_pool_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool_base_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool_quote_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_2022_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associated_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pump_amm_event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "migrate_bonding_curve_creator",
+      "discriminator": [
+        87,
+        124,
+        52,
+        191,
+        52,
+        38,
+        214,
+        232
+      ],
+      "accounts": [
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sharing_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "sell",
+      "discriminator": [
+        51,
+        230,
+        133,
+        164,
+        1,
+        127,
+        131,
+        173
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "fee_recipient",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associated_user",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "creator_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "fee_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "fee_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "set_creator",
+      "discriminator": [
+        254,
+        148,
+        255,
+        112,
+        207,
+        142,
+        170,
+        165
+      ],
+      "accounts": [
+        {
+          "name": "set_creator_authority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "metadata",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "set_mayhem_virtual_params",
+      "discriminator": [
+        61,
+        169,
+        188,
+        191,
+        153,
+        149,
+        42,
+        97
+      ],
+      "accounts": [
+        {
+          "name": "sol_vault_authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "mayhem_token_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "global",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "set_metaplex_creator",
+      "discriminator": [
+        138,
+        96,
+        174,
+        217,
+        48,
+        85,
+        197,
+        246
+      ],
+      "accounts": [
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "metadata",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "bonding_curve",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "set_params",
+      "discriminator": [
+        27,
+        234,
+        178,
+        52,
+        147,
+        2,
+        187,
+        141
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "set_reserved_fee_recipients",
+      "discriminator": [
+        111,
+        172,
+        162,
+        232,
+        114,
+        89,
+        213,
+        142
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "sync_user_volume_accumulator",
+      "discriminator": [
+        86,
+        31,
+        192,
+        87,
+        163,
+        87,
+        79,
+        238
+      ],
+      "accounts": [
+        {
+          "name": "user",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "global_volume_accumulator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "user_volume_accumulator",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "toggle_create_v2",
+      "discriminator": [
+        28,
+        255,
+        230,
+        240,
+        172,
+        107,
+        203,
+        171
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "toggle_mayhem_mode",
+      "discriminator": [
+        1,
+        9,
+        111,
+        208,
+        100,
+        31,
+        255,
+        163
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "update_global_authority",
+      "discriminator": [
+        227,
+        181,
+        74,
+        196,
+        208,
+        21,
+        97,
+        213
+      ],
+      "accounts": [
+        {
+          "name": "global",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "new_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "event_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    }
+  ]
+}

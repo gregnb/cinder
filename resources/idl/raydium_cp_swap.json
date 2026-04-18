@@ -1,0 +1,955 @@
+{
+  "address": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+  "metadata": {
+    "name": "raydium_cp_swap",
+    "version": "0.2.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "close_permission_pda",
+      "discriminator": [
+        156,
+        84,
+        32,
+        118,
+        69,
+        135,
+        70,
+        123
+      ],
+      "accounts": [
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "permission_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "permission",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "collect_creator_fee",
+      "discriminator": [
+        20,
+        22,
+        86,
+        123,
+        198,
+        28,
+        219,
+        132
+      ],
+      "accounts": [
+        {
+          "name": "creator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "amm_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_0_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_1_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "vault_0_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "vault_1_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "creator_token_0",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "creator_token_1",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_0_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_1_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associated_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "collect_fund_fee",
+      "discriminator": [
+        167,
+        138,
+        78,
+        149,
+        223,
+        194,
+        6,
+        126
+      ],
+      "accounts": [
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "amm_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_0_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_1_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "vault_0_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "vault_1_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "recipient_token_0_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "recipient_token_1_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_2022",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "collect_protocol_fee",
+      "discriminator": [
+        136,
+        136,
+        252,
+        221,
+        194,
+        66,
+        126,
+        89
+      ],
+      "accounts": [
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "amm_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_0_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_1_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "vault_0_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "vault_1_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "recipient_token_0_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "recipient_token_1_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_2022",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "create_amm_config",
+      "discriminator": [
+        137,
+        52,
+        237,
+        212,
+        215,
+        117,
+        108,
+        104
+      ],
+      "accounts": [
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "amm_config",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "create_permission_pda",
+      "discriminator": [
+        135,
+        136,
+        2,
+        216,
+        137,
+        169,
+        181,
+        202
+      ],
+      "accounts": [
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "permission_authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "permission",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "deposit",
+      "discriminator": [
+        242,
+        35,
+        198,
+        137,
+        82,
+        225,
+        242,
+        182
+      ],
+      "accounts": [
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner_lp_token",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_0_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_1_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_0_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_1_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_2022",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "vault_0_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "vault_1_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "lp_mint",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize",
+      "discriminator": [
+        175,
+        175,
+        109,
+        31,
+        13,
+        152,
+        155,
+        237
+      ],
+      "accounts": [
+        {
+          "name": "creator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "amm_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_0_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_1_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "lp_mint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "creator_token_0",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "creator_token_1",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "creator_lp_token",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_0_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_1_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "create_pool_fee",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "observation_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_0_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_1_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associated_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initialize_with_permission",
+      "discriminator": [
+        63,
+        55,
+        254,
+        65,
+        49,
+        178,
+        89,
+        121
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "creator",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "amm_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_0_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_1_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "lp_mint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "payer_token_0",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "payer_token_1",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "payer_lp_token",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_0_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_1_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "create_pool_fee",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "observation_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "permission",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_0_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_1_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associated_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "system_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "swap_base_input",
+      "discriminator": [
+        143,
+        190,
+        90,
+        218,
+        196,
+        30,
+        51,
+        222
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "amm_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "input_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "output_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "input_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "output_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "input_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "output_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "input_token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "output_token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "observation_state",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "swap_base_output",
+      "discriminator": [
+        55,
+        217,
+        98,
+        86,
+        163,
+        74,
+        180,
+        173
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "amm_config",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "input_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "output_token_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "input_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "output_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "input_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "output_token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "input_token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "output_token_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "observation_state",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "update_amm_config",
+      "discriminator": [
+        49,
+        60,
+        174,
+        136,
+        154,
+        28,
+        116,
+        200
+      ],
+      "accounts": [
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "amm_config",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "update_pool_status",
+      "discriminator": [
+        130,
+        87,
+        108,
+        6,
+        46,
+        224,
+        117,
+        123
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdraw",
+      "discriminator": [
+        183,
+        18,
+        70,
+        156,
+        148,
+        109,
+        161,
+        34
+      ],
+      "accounts": [
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool_state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner_lp_token",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_0_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_1_account",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_0_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_1_vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "token_program",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "token_program_2022",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "vault_0_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "vault_1_mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "lp_mint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "memo_program",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    }
+  ]
+}

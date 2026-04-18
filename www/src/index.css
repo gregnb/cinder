@@ -1,0 +1,53 @@
+/* ── Reset ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Variables ─────────────────────────────────────────── */
+:root {
+  --bg-start: #1a1b2e;
+  --bg-mid: #151628;
+  --bg-end: #12131f;
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+
+  --accent-purple: #9945FF;
+  --accent-purple-hover: #7B2FE0;
+  --accent-green: #14F195;
+  --accent-cyan: #00D4FF;
+
+  --border-subtle: rgba(100, 100, 150, 0.2);
+
+  --font-family: 'Exo 2', 'Inter', -apple-system, sans-serif;
+  --radius-button: 16px;
+}
+
+/* ── Global ────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  background: var(--bg-end);
+}
+
+body {
+  font-family: var(--font-family);
+  background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-mid) 40%, var(--bg-end) 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

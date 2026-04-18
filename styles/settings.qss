@@ -1,0 +1,131 @@
+#settingsRow,
+#settingsTab {
+    background: transparent;
+    border: none;
+}
+
+#settingsRowTitle {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#settingsRowDesc {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#settingsSeparator {
+    background: rgba(100, 100, 150, 0.15);
+    border: none;
+}
+
+#settingsInput {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid {{borderSubtle}};
+    border-radius: {{smallRadius}}px;
+    padding: 8px 14px;
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    color: {{textPrimary}};
+}
+
+#settingsInput:focus {
+    border: 1px solid {{solanaPurple}};
+}
+
+#settingsDisclaimer {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: rgba(100, 100, 150, 0.08);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+#settingsAboutLabel {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#settingsAboutValue {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#settingsAboutLink {
+    color: {{solanaCyan}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#rpcEndpointList {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 8px;
+    padding: 4px;
+    color: {{textPrimary}};
+    font-size: 13px;
+    outline: none;
+}
+
+#rpcEndpointList::item {
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+#rpcEndpointList::item:selected {
+    background: rgba(100, 100, 150, 0.3);
+    color: {{textPrimary}};
+}
+
+#rpcEndpointList::item:hover {
+    background: rgba(100, 100, 150, 0.15);
+}
+
+QPushButton[uiClass="settingsRpcAddBtn"] {
+    background: rgba(0, 200, 120, 0.15);
+    border: 1px solid rgba(0, 200, 120, 0.4);
+    border-radius: 6px;
+    color: #00c878;
+    font-size: 12px;
+    padding: 0 14px;
+}
+
+QPushButton[uiClass="settingsRpcAddBtn"]:hover {
+    background: rgba(0, 200, 120, 0.3);
+}
+
+QPushButton[uiClass="settingsRpcRemoveBtn"] {
+    background: rgba(220, 60, 60, 0.15);
+    border: 1px solid rgba(220, 60, 60, 0.4);
+    border-radius: 6px;
+    color: {{textPrimary}};
+    font-size: 12px;
+    padding: 0 14px;
+}
+
+QPushButton[uiClass="settingsRpcRemoveBtn"]:hover {
+    background: rgba(220, 60, 60, 0.3);
+}
+
+QPushButton[uiClass="settingsRpcRemoveBtn"]:disabled {
+    background: rgba(100, 100, 150, 0.08);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    color: rgba(255, 255, 255, 0.25);
+}

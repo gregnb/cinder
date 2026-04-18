@@ -1,0 +1,18 @@
+{
+  "name": "solana-desktop-wallet",
+  "version": "1.0.0",
+  "description": "A cross-platform desktop wallet application for Solana blockchain built with Qt and C++.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4"
+  }
+}

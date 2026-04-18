@@ -1,0 +1,371 @@
+[uiClass="contentViewport"],
+#activityViewport {
+    background: #12131f;
+}
+
+#activityTransparent {
+    background: transparent;
+    border: none;
+}
+
+#activitySyncBadge {
+    background: rgba(250, 200, 50, 0.12);
+    border-radius: 4px;
+    border: none;
+}
+
+#activitySyncText {
+    color: rgba(253, 214, 99, 1.0);
+    font-size: 10px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#activityStatusLabel {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    padding: 20px 0;
+}
+
+#activityHeaderLabel {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 11px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    padding: 4px 0;
+}
+
+#activityHeaderLabel[activeSort="true"] {
+    color: {{textPrimary}};
+    font-weight: 700;
+}
+
+#activitySortBtn {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+#activitySortBtn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+}
+
+#activityFilterBtn {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+#activityFilterBtn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+}
+
+#activityFilterBtn[activeFilter="true"] {
+    background: rgba(167, 139, 250, 0.15);
+    border-radius: 4px;
+}
+
+#activityFilterBtn[activeFilter="true"]:hover {
+    background: rgba(167, 139, 250, 0.25);
+}
+
+#activitySeparator {
+    background: rgba(100, 100, 150, 0.15);
+    max-height: 1px;
+    border: none;
+}
+
+#activityMutedLabel12 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#activityPagBtn {
+    background: rgba(30, 31, 55, 0.6);
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#activityPagBtn:hover {
+    background: rgba(30, 31, 55, 0.9);
+    color: {{textPrimary}};
+}
+
+#activityPagBtn:disabled {
+    color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(100, 100, 150, 0.15);
+}
+
+#filterPopup {
+    background: rgba(22, 24, 40, 0.98);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 8px;
+}
+
+#filterPopup QLineEdit {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 6px;
+    color: {{textPrimary}};
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+#filterPopup QLineEdit:focus {
+    border: 1px solid rgba(100, 150, 255, 0.5);
+}
+
+#filterPopup QLineEdit::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#filterPopup QPushButton[uiRole="reset"] {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#filterPopup QPushButton[uiRole="reset"]:hover {
+    color: {{textPrimary}};
+    border-color: rgba(100, 100, 150, 0.5);
+}
+
+#filterPopup QPushButton[uiRole="apply"] {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1a3a5c, stop:0.5 #224a70, stop:1 #1a3a5c);
+    color: {{textPrimary}};
+    border: 1px solid #2a5a8a;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#filterPopup QPushButton[uiRole="apply"]:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #224a70, stop:0.5 #2a5a8a, stop:1 #224a70);
+}
+
+#filterPopup QPushButton[uiRole="preset"] {
+    background: rgba(30, 31, 55, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#filterPopup QPushButton[uiRole="preset"]:hover {
+    background: rgba(30, 31, 55, 0.8);
+    color: {{textPrimary}};
+}
+
+#filterPopup QPushButton[uiRole="dateInput"] {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.3);
+    padding: 8px 10px;
+    font-size: 13px;
+    text-align: left;
+}
+
+#filterPopup QPushButton[uiRole="dateInput"]:hover {
+    border: 1px solid rgba(100, 150, 255, 0.5);
+}
+
+#filterPopup QPushButton[uiRole="dateInput"][dateActive="true"] {
+    color: {{textPrimary}};
+}
+
+#activityPopupTitle {
+    color: {{textPrimary}};
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#activityPopupSubLabel {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#activityTimeLabel {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#activityAddressLabel {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#activityTokenLabel {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#activityRow {
+    border-radius: 6px;
+}
+
+#activityRow QLabel {
+    background: transparent;
+    border: none;
+}
+
+#activityRow:hover,
+#activityRow[groupHover="true"] {
+    background: rgba(100, 100, 150, 0.12);
+}
+
+#activityRow[failed="true"] {
+    background: rgba(239, 68, 68, 0.06);
+}
+
+#activityRow[failed="true"]:hover,
+#activityRow[failed="true"][groupHover="true"] {
+    background: rgba(239, 68, 68, 0.12);
+}
+
+QLabel[uiClass="activitySignature"] {
+    color: rgba(100, 150, 255, 0.9);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="activitySignatureError"] {
+    color: rgba(239, 68, 68, 0.7);
+    font-size: 13px;
+    text-decoration: line-through;
+    background: transparent;
+    border: none;
+}
+
+#activityActionBadge {
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 2px 8px;
+    border: none;
+}
+
+#activityActionBadge[activityKind="send"] {
+    background: rgba(59, 130, 246, 0.2);
+    color: rgba(96, 165, 250, 1.0);
+}
+
+#activityActionBadge[activityKind="receive"] {
+    background: rgba(16, 185, 129, 0.2);
+    color: rgba(52, 211, 153, 1.0);
+}
+
+#activityActionBadge[activityKind="mint"] {
+    background: rgba(6, 182, 212, 0.2);
+    color: rgba(34, 211, 238, 1.0);
+}
+
+#activityActionBadge[activityKind="burn"] {
+    background: rgba(239, 68, 68, 0.2);
+    color: rgba(248, 113, 113, 1.0);
+}
+
+#activityActionBadge[activityKind="create_account"] {
+    background: rgba(168, 85, 247, 0.2);
+    color: rgba(192, 132, 252, 1.0);
+}
+
+#activityActionBadge[activityKind="create_nonce"] {
+    background: rgba(245, 158, 11, 0.2);
+    color: rgba(251, 191, 36, 1.0);
+}
+
+#activityActionBadge[activityKind="close_account"] {
+    background: rgba(244, 63, 94, 0.2);
+    color: rgba(251, 113, 133, 1.0);
+}
+
+#activityActionBadge[activityKind="init_account"] {
+    background: rgba(20, 184, 166, 0.2);
+    color: rgba(45, 212, 191, 1.0);
+}
+
+#activityActionBadge[activityKind="unknown"] {
+    background: rgba(100, 116, 139, 0.2);
+    color: rgba(148, 163, 184, 1.0);
+}
+
+#activityAmountLabel {
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#activityAmountLabel[amountTone="positive"] {
+    color: #10b981;
+}
+
+#activityAmountLabel[amountTone="negative"] {
+    color: #ef4444;
+}
+
+#activityAmountLabel[amountTone="neutral"] {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#activityChip {
+    background: rgba(30, 31, 55, 0.8);
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+#activityChip:hover {
+    background: rgba(40, 42, 70, 0.9);
+    color: {{textPrimary}};
+}
+
+#activityClearChip {
+    background: rgba(239, 68, 68, 0.15);
+    color: rgba(248, 113, 113, 0.9);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+#activityClearChip:hover {
+    background: rgba(239, 68, 68, 0.25);
+    color: #f87171;
+}

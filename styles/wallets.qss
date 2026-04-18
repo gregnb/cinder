@@ -1,0 +1,369 @@
+#accountsListCard,
+#accountsProfileCard,
+#accountsRecoveryCard,
+#accountsSecCard {
+    background: rgba(22, 24, 42, 0.6);
+    border: 1px solid {{borderSubtle}};
+    border-radius: {{cardRadius}}px;
+}
+
+#accountsListRow {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+}
+
+#accountsListRow:hover {
+    background: rgba(100, 100, 200, 0.08);
+}
+
+#accountsListRow[active="true"] {
+    background: rgba(20, 241, 149, 0.08);
+    border: 1px solid rgba(20, 241, 149, 0.3);
+}
+
+#accountsListRow[active="true"]:hover {
+    background: rgba(20, 241, 149, 0.12);
+}
+
+#accountsTransparentIcon {
+    background: transparent;
+    border: none;
+}
+
+#accountsTypeBadge {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: {{fontFamily}};
+    font-size: 11px;
+    background: rgba(100, 100, 150, 0.15);
+    border-radius: 4px;
+    padding: 2px 6px;
+    border: none;
+}
+
+QLabel[uiClass="accountsName"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="accountsAddress"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#accountsDetailName {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 22px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#accountsDetailType {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#accountsSectionTitle {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+}
+
+[uiClass="accountsRow"] {
+    background: rgba(22, 24, 42, 0.6);
+    border: none;
+    border-radius: 0;
+}
+
+QLabel[uiClass="accountsLabel"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="accountsValue"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="accountsStatusPill"] {
+    color: {{successGreen}};
+    font-size: 13px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+    background: transparent;
+    border: none;
+}
+
+QPushButton[uiClass="accountsSwitchBtn"] {
+    color: rgba(52, 211, 153, 1.0);
+    background: rgba(16, 185, 129, 0.2);
+    border: none;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: {{fontFamily}};
+}
+
+QPushButton[uiClass="accountsSwitchBtn"]:hover {
+    background: rgba(16, 185, 129, 0.35);
+}
+
+QLabel[uiClass="accountsMonoValue"] {
+    color: {{textSecondary}};
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#accountsInlineEdit {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid {{borderSubtle}};
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+}
+
+#accountsRevealLink,
+#accountsActionLink {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: #4DA1FF;
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#accountsRevealLink {
+    font-size: 14px;
+}
+
+#accountsRevealLink:hover,
+#accountsActionLink:hover {
+    color: #6DB5FF;
+}
+
+#accountsHideLink {
+    background: transparent;
+    border: none;
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#accountsHideLink:hover {
+    color: {{textPrimary}};
+}
+
+#accountsListAddBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1a3a5c, stop:0.5 #224a70, stop:1 #1a3a5c);
+    border: 1px solid #2a5a8a;
+    border-radius: 12px;
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px;
+}
+
+#accountsListAddBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #224a70, stop:0.5 #2a5a8a, stop:1 #224a70);
+    border: 1px solid #3a6a9a;
+}
+
+QPushButton[uiClass="accountsAddAccountBtn"] {
+    background: transparent;
+    color: rgba(20,241,149,0.6);
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    padding: 8px 24px 8px 76px;
+    text-align: left;
+    font-family: {{fontFamily}};
+}
+
+QPushButton[uiClass="accountsAddAccountBtn"]:hover {
+    color: rgba(20,241,149,0.9);
+}
+
+#accountsDialogConfirm {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #6f3cf6, stop:1 #3b82f6);
+    border: none;
+    border-radius: 10px;
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 20px;
+}
+
+#accountsDialogConfirm:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #7c4cff, stop:1 #4a90ff);
+}
+
+#accountsDialogRemove {
+    background: rgba(239, 68, 68, 0.2);
+    color: {{errorRed}};
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#accountsDialogRemove:hover {
+    background: rgba(239, 68, 68, 0.3);
+}
+
+#accountsDialogRemove:disabled {
+    color: rgba(239, 68, 68, 0.3);
+    background: transparent;
+    border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+QLabel[uiClass="accountsTimer"] {
+    color: {{textSecondary}};
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}
+
+#accountsSecretGrid {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid {{borderSubtle}};
+    border-radius: 8px;
+    padding: 12px;
+}
+
+#accountsRecoveryWord {
+    color: #FFB347;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+    padding: 3px 8px;
+}
+
+#accountsSecretValue {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid {{borderSubtle}};
+    border-radius: 8px;
+    padding: 12px;
+    color: #FFB347;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+}
+
+#accountsDangerBtn {
+    background-color: #6b1d1d;
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #8b3535;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+#accountsDangerBtn:hover {
+    background-color: #7d2424;
+    border: 1px solid #a04040;
+}
+
+#accountsSeparator,
+#accountsListSeparator {
+    background: rgba(100, 100, 150, 0.15);
+    border: none;
+}
+
+#accountsListSeparator[inset="true"] {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#accountsDialog {
+    background: {{bgGradientEnd}};
+    border: 1px solid {{borderSubtle}};
+}
+
+#accountsDialogTitle {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#accountsDialogDesc {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#accountsDialogInput {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid {{borderSubtle}};
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+}
+
+#accountsDialogError {
+    color: {{errorRed}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#accountsDialogCancel {
+    background: transparent;
+    border: 1px solid {{borderSubtle}};
+    border-radius: 8px;
+    padding: 8px 20px;
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+}
+
+#accountsDialogCancel:hover {
+    background: rgba(100, 100, 150, 0.1);
+}

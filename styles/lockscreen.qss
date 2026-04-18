@@ -1,0 +1,140 @@
+#lockScreen {
+    background: qlineargradient(x1:0, y1:0, x2:0.3, y2:1,
+        stop:0 {{bgGradientStart}}, stop:0.5 {{bgGradientMid}}, stop:1 {{bgGradientEnd}});
+}
+
+#lockIcon,
+#lockTitle,
+#lockSubtitle,
+#lockPasswordLabel,
+#lockErrorLabel,
+#lockOrLabel,
+#lockFooter {
+    background: transparent;
+    border: none;
+    font-family: {{fontFamily}};
+}
+
+#lockTitle {
+    color: {{textPrimary}};
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#lockSubtitle {
+    color: {{textSecondary}};
+    font-size: 14px;
+}
+
+#lockCard {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 {{cardBgStart}}, stop:1 {{cardBgEnd}});
+    border: 1px solid {{borderSubtle}};
+    border-radius: {{cardRadius}}px;
+}
+
+#lockPasswordLabel {
+    color: {{textSecondary}};
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#lockInputRow {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid {{borderSubtle}};
+    border-radius: {{smallRadius}}px;
+}
+
+#lockInputRow[focused="true"] {
+    border: 1px solid {{solanaPurple}};
+}
+
+#lockPasswordInput {
+    background: transparent;
+    border: none;
+    padding: 0 4px 0 16px;
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    color: {{textPrimary}};
+}
+
+#lockEyeBtn {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+}
+
+#lockEyeBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#lockEyeBtn:pressed {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+#lockErrorLabel {
+    color: {{errorRed}};
+    font-size: 12px;
+}
+
+#lockUnlockBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 {{solanaPurple}}, stop:1 {{solanaCyan}});
+    border: none;
+    border-radius: {{buttonRadius}}px;
+    font-family: {{fontFamily}};
+    font-size: 15px;
+    font-weight: 700;
+    color: {{textPrimary}};
+}
+
+#lockUnlockBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #A855F7, stop:1 #22D3EE);
+}
+
+#lockUnlockBtn:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #7B38CC, stop:1 #0099CC);
+}
+
+#lockUnlockBtn:disabled {
+    background: rgba(80, 80, 120, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#lockOrLabel,
+#lockFooter {
+    color: {{textTertiary}};
+    font-size: 12px;
+}
+
+#lockTouchIdBtn {
+    background: transparent;
+    border: 1px solid {{borderSubtle}};
+    border-radius: {{buttonRadius}}px;
+    padding: 0px;
+}
+
+#lockTouchIdBtn QLabel {
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="lockscreenTouchIdLabel"] {
+    color: rgba(255,255,255,0.6);
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="lockscreenTouchIdLabel"][hovered="true"] {
+    color: {{textPrimary}};
+}
+
+#lockTouchIdBtn:disabled {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(100, 100, 150, 0.15);
+}

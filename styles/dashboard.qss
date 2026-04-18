@@ -1,0 +1,94 @@
+#dashboardDebugBtn {
+    background: #7c3aed;
+    color: {{textPrimary}};
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#dashboardDebugBtn:hover {
+    background: #6d28d9;
+}
+
+#dashboardEmptyState {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    padding: 20px 0;
+}
+
+#dashboardUpdatedLabel {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="dashboardStatLabel"] {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#dashboardStatValue {
+    color: {{textPrimary}};
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#hwDebugCard {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(30, 31, 55, 0.8), stop:1 rgba(25, 26, 45, 0.8));
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 16px;
+}
+
+#hwDebugCard QLabel {
+    background: transparent;
+    border: none;
+}
+
+#dashboardDebugTitle {
+    color: {{textPrimary}};
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#dashboardDebugBtnSecondary {
+    background: rgba(100, 100, 150, 0.3);
+    color: {{textPrimary}};
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#dashboardDebugBtnSecondary:hover {
+    background: rgba(100, 100, 150, 0.5);
+}
+
+#dashboardDebugStatus {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#dashboardDebugStatus[statusType="success"] {
+    color: #14F195;
+}
+
+#dashboardDebugStatus[statusType="error"] {
+    color: #ef4444;
+}
+
+#dashboardDebugStatus[statusType="warning"] {
+    color: #f59e0b;
+}

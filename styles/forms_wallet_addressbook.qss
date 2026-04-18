@@ -1,0 +1,692 @@
+/* ── Wallet / BIP39 Page ────────────────────────────────────── */
+
+#walletPage {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 {{bgGradientStart}}, stop:0.15 {{bgGradientMid}}, stop:1 {{bgGradientEnd}});
+}
+
+#walletWarning {
+    color: #d4a574;
+    font-size: 16px;
+    font-style: italic;
+    background: transparent;
+}
+
+#seedWord {
+    background: rgba(16, 18, 36, 0.8);
+    border: 1px solid rgba(75, 95, 175, 0.5);
+    border-radius: 10px;
+    color: {{textPrimary}};
+    padding: 14px 18px;
+    font-size: 18px;
+    font-family: {{fontFamily}};
+}
+
+#passphraseBox {
+    background: rgba(16, 18, 36, 0.8);
+    border: 1px solid rgba(140, 100, 200, 0.45);
+    border-radius: 10px;
+}
+
+#walletCheckbox {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+    spacing: 12px;
+    background: transparent;
+    font-family: {{fontFamily}};
+}
+
+#walletCheckbox::indicator {
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(75, 95, 175, 0.5);
+    border-radius: 5px;
+    background: rgba(16, 18, 36, 0.8);
+}
+
+#walletCheckbox::indicator:checked {
+    background: rgba(80, 100, 210, 0.7);
+    border: 2px solid rgba(100, 140, 255, 0.7);
+}
+
+#walletContinueBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #7c3aed, stop:0.5 #6d5aed, stop:1 #3b82f6);
+    color: {{textPrimary}};
+    border: none;
+    border-radius: 14px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+}
+
+#walletContinueBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #8b5cf6, stop:0.5 #7d6af6, stop:1 #60a5fa);
+}
+
+#walletContinueBtnDisabled {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #2a1a4a, stop:0.5 #252050, stop:1 #1a2545);
+    color: rgba(255, 255, 255, 0.35);
+    border: none;
+    border-radius: 14px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+}
+
+/* ── Setup Page Shared Styles ───────────────────────────────── */
+
+QLabel[uiClass="setupHeroTitle"] {
+    color: {{textPrimary}};
+    font-size: 36px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupModalTitle"] {
+    color: {{textPrimary}};
+    font-size: 24px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupMutedDesc14"] {
+    color: {{textSecondary}};
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupMutedDesc15"] {
+    color: {{textSecondary}};
+    font-size: 15px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupFieldLabel14"] {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupHelpText13"] {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupHelpText13"][validState="true"] {
+    color: {{successGreen}};
+}
+
+QLabel[uiClass="setupErrorText13"] {
+    color: {{errorRed}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupErrorText14"] {
+    color: {{errorRed}};
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupErrorText16Strong"] {
+    color: {{errorRed}};
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    padding-top: 16px;
+}
+
+QAbstractItemView[uiClass="setupBip39CompleterPopup"] {
+    background: rgb(16, 18, 36);
+    border: 1px solid rgba(75, 95, 175, 0.6);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+    outline: none;
+}
+
+QAbstractItemView[uiClass="setupBip39CompleterPopup"]::item {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+QAbstractItemView[uiClass="setupBip39CompleterPopup"]::item:hover,
+QAbstractItemView[uiClass="setupBip39CompleterPopup"]::item:selected {
+    background: rgba(75, 95, 175, 0.35);
+}
+
+QLabel[uiClass="addressBookErrorLabel"] {
+    color: {{errorRed}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QLineEdit[uiClass="setupTextInput"] {
+    background: rgba(16, 18, 36, 0.8);
+    border: 1px solid rgba(75, 95, 175, 0.5);
+    border-radius: 10px;
+    color: {{textPrimary}};
+    font-size: 16px;
+    padding: 10px 16px;
+}
+
+QWidget[uiClass="setupWordCell"] {
+    background: rgba(16, 18, 36, 0.8);
+    border: 1px solid rgba(75, 95, 175, 0.5);
+    border-radius: 10px;
+}
+
+QWidget[uiClass="setupWordCell"][errorState="true"] {
+    border: 1px solid {{errorRed}};
+}
+
+QWidget[uiClass="setupWordCell"] QLabel {
+    background: transparent;
+    border: none;
+    color: {{textPrimary}};
+    font-size: 18px;
+}
+
+QWidget[uiClass="setupWordCell"] QLineEdit {
+    background: transparent;
+    border: none;
+    color: {{textPrimary}};
+    font-size: 18px;
+    padding: 0px;
+}
+
+QLabel[uiClass="setupHardwareHeroTitle"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 28px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupHardwareTagline"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 15px;
+    background: transparent;
+    border: none;
+}
+
+QWidget[uiClass="setupHardwareStepRow"],
+QWidget[uiClass="setupTransparentBox"] {
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupHardwareStepCircle"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 16px;
+}
+
+QLabel[uiClass="setupHardwareStepCircle"][accent="ledger"] {
+    background: rgba(75, 95, 175, 0.35);
+}
+
+QLabel[uiClass="setupHardwareStepCircle"][accent="trezor"] {
+    background: rgba(134, 194, 50, 0.25);
+}
+
+QLabel[uiClass="setupHardwareStepLabel"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 15px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupHardwareStatus"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupHardwareStatus"][statusType="success"] {
+    color: {{successGreen}};
+}
+
+QLabel[uiClass="setupHardwareStatus"][statusType="error"] {
+    color: {{errorRed}};
+}
+
+QLabel[uiClass="setupHardwareDeviceLabel"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QPushButton[uiClass="setupHardwareAdvanced"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupHardwareAdvancedLabel"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLineEdit[uiClass="setupHardwarePathInput"] {
+    background: rgba(0, 0, 0, 0.3);
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+QPushButton[uiClass="setupLinkButton"] {
+    color: #9945FF;
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    padding: 0 0 0 4px;
+    text-decoration: underline;
+}
+
+QDialog[uiClass="setupDialog"] {
+    background: #12131f;
+}
+
+QDialog[uiClass="setupDialog"] QLabel,
+QDialog[uiClass="setupDialog"] QPushButton {
+    background: transparent;
+    border: none;
+}
+
+QTextEdit[uiClass="setupTosText"] {
+    background: rgba(16, 18, 36, 0.8);
+    border: 1px solid rgba(75, 95, 175, 0.3);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 16px;
+}
+
+QTextEdit[uiClass="setupTosText"] QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+}
+
+QTextEdit[uiClass="setupTosText"] QScrollBar::handle:vertical {
+    background: rgba(255,255,255,0.15);
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+QTextEdit[uiClass="setupTosText"] QScrollBar::add-line:vertical,
+QTextEdit[uiClass="setupTosText"] QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QWidget[uiClass="setupSuccessPage"] {
+    background: {{bgGradientEnd}};
+}
+
+QLabel[uiClass="setupSuccessTitle"] {
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupSuccessDesc"] {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="setupSuccessAddressLabel"] {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QWidget[uiClass="setupSuccessAddressRow"] {
+    background: rgba(8, 10, 22, 0.95);
+    border: 1px solid rgba(75, 95, 175, 0.5);
+    border-radius: 10px;
+}
+
+/* ── Generic Dropdown Widget ───────────────────────────────── */
+
+#dropdownBtn {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 10px;
+    padding: 8px 14px;
+    text-align: left;
+}
+
+#dropdownBtn:hover {
+    border: 1px solid rgba(100, 150, 255, 0.5);
+}
+
+#dropdownLabel {
+    color: {{textSecondary}};
+    font-size: 14px;
+    background: transparent;
+}
+
+#dropdownChevron {
+    background: transparent;
+}
+
+#dropdownList {
+    background: {{dropdownListBg}};
+    color: {{textPrimary}};
+    border: 1px solid {{dropdownListBorder}};
+    border-radius: 10px;
+    padding: 6px;
+    outline: none;
+}
+
+#dropdownList::item {
+    padding: 8px 14px;
+    min-height: 22px;
+    border-radius: 6px;
+}
+
+#dropdownList::item:hover {
+    background: {{dropdownItemHover}};
+}
+
+#dropdownList::item:selected {
+    background: {{dropdownItemSelected}};
+}
+
+#dropdownList QScrollBar:vertical {
+    background: {{dropdownListBg}};
+    width: 8px;
+    border-radius: 4px;
+    margin: 4px 2px;
+}
+
+#dropdownList QScrollBar::handle:vertical {
+    background: {{dropdownScrollHandle}};
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+#dropdownList QScrollBar::handle:vertical:hover {
+    background: {{dropdownScrollHover}};
+}
+
+#dropdownList QScrollBar::add-line:vertical,
+#dropdownList QScrollBar::sub-line:vertical,
+#dropdownList QScrollBar::add-page:vertical,
+#dropdownList QScrollBar::sub-page:vertical {
+    background: none;
+    height: 0px;
+}
+
+/* ── Address Book Page ─────────────────────────────────────── */
+
+#abAddButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1a2b42, stop:0.5 #1e2f48, stop:1 #1c2d45);
+    color: {{textPrimary}};
+    border: 1px solid #2a4a6a;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+}
+
+#abAddButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #213552, stop:0.5 #253a58, stop:1 #233855);
+    border: 1px solid #3a5a8a;
+}
+
+#abSaveButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1a3a5c, stop:0.5 #224a70, stop:1 #1a3a5c);
+    color: {{textPrimary}};
+    border: 1px solid #2a5a8a;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+}
+
+#abSaveButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #214568, stop:0.5 #2a557e, stop:1 #214568);
+    border: 1px solid #3a6a9a;
+}
+
+#abSaveButton:disabled {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #2a1a4a, stop:0.5 #252050, stop:1 #1a2545);
+    color: rgba(255, 255, 255, 0.35);
+    border: none;
+}
+
+#abSeparator {
+    background: rgba(100, 100, 150, 0.2);
+    max-height: 1px;
+}
+
+#abRow {
+    border-radius: 0px;
+    background: #12131f;
+}
+
+#abRow[alternate="true"] {
+    background: #161828;
+}
+
+#abRow[hovered="true"] {
+    background: #1e2235;
+}
+
+#abRow QLabel {
+    background: transparent;
+}
+
+#abActionsContainer {
+    background: transparent;
+    border: none;
+}
+
+#abSearchInput {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 10px;
+    color: {{textPrimary}};
+    padding: 8px 14px;
+    font-size: 14px;
+    font-family: {{fontFamily}};
+    selection-background-color: rgba(100, 150, 255, 0.3);
+}
+
+#abSearchInput:focus {
+    border: 1px solid rgba(100, 150, 255, 0.5);
+}
+
+#abColumnHeader {
+    color: {{textTertiary}};
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+#abContactName {
+    color: {{textPrimary}};
+    font-size: 15px;
+    font-weight: 600;
+    background: transparent;
+}
+
+#abContactAddress {
+    color: {{textSecondary}};
+    font-size: 14px;
+    font-family: {{fontFamily}};
+    background: transparent;
+}
+
+#abContactDate {
+    color: {{textTertiary}};
+    font-size: 13px;
+    font-family: {{fontFamily}};
+    background: transparent;
+}
+
+/* ── Address Input Widget (combo line-edit + contact dropdown) ── */
+
+#addressInput {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 12px;
+    color: {{textPrimary}};
+    padding: 12px 16px;
+    font-size: 15px;
+    font-family: {{fontFamily}};
+    selection-background-color: rgba(100, 150, 255, 0.3);
+}
+
+#addressInput:focus {
+    border: 1px solid rgba(100, 150, 255, 0.5);
+}
+
+#addressInputList {
+    background: {{dropdownListBg}};
+    color: {{textPrimary}};
+    border: 1px solid {{dropdownListBorder}};
+    border-radius: 10px;
+    padding: 6px;
+    outline: none;
+}
+
+#addressInputList::item {
+    padding: 10px 14px;
+    min-height: 28px;
+    border-radius: 6px;
+}
+
+#addressInputList::item:hover {
+    background: {{dropdownItemHover}};
+}
+
+#addressInputList::item:selected {
+    background: {{dropdownItemSelected}};
+}
+
+/* ── Amount Input Wrapper (Send Form) ───────────────────────── */
+
+#amountWrapper {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 12px;
+}
+
+#amountInnerInput {
+    background: transparent;
+    border: none;
+    color: {{textPrimary}};
+    font-size: 15px;
+    font-family: {{fontFamily}};
+    padding: 0px;
+    selection-background-color: rgba(100, 150, 255, 0.3);
+}
+
+/* ── Confirm Dialog (overlay modal) ─────────────────────────── */
+
+#confirmOverlay {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+#confirmCard {
+    background: {{bgGradientEnd}};
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 16px;
+}
+
+#confirmIcon {
+    font-size: 32px;
+    background: transparent;
+    border: none;
+}
+
+#confirmMessage {
+    color: {{textPrimary}};
+    font-size: 15px;
+    background: transparent;
+    border: none;
+}
+
+#confirmCancelBtn {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 10px;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+}
+
+#confirmCancelBtn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(100, 100, 150, 0.5);
+}
+
+#confirmDeleteBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #5a1a1a, stop:0.5 #6a2020, stop:1 #5a1a1a);
+    color: #ff6b6b;
+    border: 1px solid #7a3030;
+    border-radius: 10px;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+}
+
+#confirmDeleteBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #6a2222, stop:0.5 #7a2828, stop:1 #6a2222);
+    border: 1px solid #8a3a3a;
+}

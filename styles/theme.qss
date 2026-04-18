@@ -1,0 +1,2 @@
+/* Theme entrypoint intentionally minimal.
+   The app now loads ordered partials via StyleLoader::loadTheme(). */

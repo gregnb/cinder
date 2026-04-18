@@ -1,0 +1,1515 @@
+{
+  "address": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+  "metadata": {
+    "name": "marinade_finance",
+    "version": "0.1.0",
+    "spec": ""
+  },
+  "instructions": [
+    {
+      "name": "initialize",
+      "discriminator": [
+        175,
+        175,
+        109,
+        31,
+        13,
+        152,
+        155,
+        237
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reservePda",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "msolMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "operationalSolAccount",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "liqPool",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "treasuryMsolAccount",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "changeAuthority",
+      "discriminator": [
+        243,
+        156,
+        92,
+        91,
+        89,
+        211,
+        185,
+        222
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "adminAuthority",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "addValidator",
+      "discriminator": [
+        57,
+        174,
+        193,
+        220,
+        73,
+        137,
+        204,
+        141
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "managerAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorVote",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "duplicationFlag",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "removeValidator",
+      "discriminator": [
+        6,
+        153,
+        213,
+        26,
+        217,
+        52,
+        125,
+        65
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "managerAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "duplicationFlag",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "operationalSolAccount",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "setValidatorScore",
+      "discriminator": [
+        113,
+        161,
+        212,
+        224,
+        164,
+        144,
+        189,
+        136
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "managerAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "configValidatorSystem",
+      "discriminator": [
+        200,
+        7,
+        127,
+        112,
+        229,
+        139,
+        178,
+        210
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "managerAuthority",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "deposit",
+      "discriminator": [
+        242,
+        35,
+        198,
+        137,
+        82,
+        225,
+        242,
+        182
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "msolMint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "liqPoolSolLegPda",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "liqPoolMsolLeg",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "liqPoolMsolLegAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reservePda",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transferFrom",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "mintTo",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "msolMintAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "depositStakeAccount",
+      "discriminator": [
+        189,
+        34,
+        52,
+        217,
+        2,
+        169,
+        64,
+        80
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "duplicationFlag",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "msolMint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mintTo",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "msolMintAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "liquidUnstake",
+      "discriminator": [
+        92,
+        86,
+        104,
+        231,
+        137,
+        94,
+        180,
+        198
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "msolMint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "liqPoolSolLegPda",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "liqPoolMsolLeg",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "treasuryMsolAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "getMsolFrom",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "getMsolFromAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "transferSolTo",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "addLiquidity",
+      "discriminator": [
+        175,
+        93,
+        190,
+        64,
+        61,
+        69,
+        247,
+        47
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lpMint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lpMintAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "liqPoolMsolLeg",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "liqPoolSolLegPda",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transferFrom",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "mintTo",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "removeLiquidity",
+      "discriminator": [
+        66,
+        70,
+        43,
+        233,
+        85,
+        202,
+        101,
+        105
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "lpMint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "burnFrom",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "burnFromAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "transferSolTo",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transferMsolTo",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "liqPoolSolLegPda",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "liqPoolMsolLeg",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "liqPoolMsolLegAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "configLp",
+      "discriminator": [
+        243,
+        171,
+        35,
+        103,
+        19,
+        107,
+        168,
+        76
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "adminAuthority",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "configMarinade",
+      "discriminator": [
+        19,
+        50,
+        241,
+        184,
+        131,
+        53,
+        42,
+        42
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "adminAuthority",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "orderUnstake",
+      "discriminator": [
+        193,
+        200,
+        250,
+        140,
+        0,
+        7,
+        223,
+        223
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "msolMint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "burnMsolFrom",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "burnMsolAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "newTicketAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "claim",
+      "discriminator": [
+        62,
+        198,
+        214,
+        193,
+        213,
+        159,
+        108,
+        210
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reservePda",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "ticketAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transferSolTo",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "stakeReserve",
+      "discriminator": [
+        239,
+        107,
+        115,
+        199,
+        231,
+        30,
+        77,
+        230
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorVote",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reservePda",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeAccount",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "stakeDepositAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "epochSchedule",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeHistory",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeConfig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "updateActive",
+      "discriminator": [
+        226,
+        149,
+        53,
+        160,
+        94,
+        106,
+        15,
+        4
+      ],
+      "accounts": [
+        {
+          "name": "common",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "updateDeactivated",
+      "discriminator": [
+        112,
+        161,
+        1,
+        233,
+        90,
+        54,
+        162,
+        227
+      ],
+      "accounts": [
+        {
+          "name": "common",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "operationalSolAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "deactivateStake",
+      "discriminator": [
+        5,
+        95,
+        100,
+        149,
+        182,
+        193,
+        216,
+        139
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "reservePda",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeDepositAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "splitStakeAccount",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "splitStakeRentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "epochSchedule",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeHistory",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "emergencyUnstake",
+      "discriminator": [
+        207,
+        110,
+        63,
+        56,
+        6,
+        26,
+        240,
+        204
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorManagerAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeDepositAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "partialUnstake",
+      "discriminator": [
+        177,
+        218,
+        150,
+        46,
+        101,
+        3,
+        175,
+        108
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorManagerAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeDepositAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reservePda",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "splitStakeAccount",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "splitStakeRentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeHistory",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "mergeStakes",
+      "discriminator": [
+        18,
+        132,
+        15,
+        200,
+        24,
+        41,
+        206,
+        148
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destinationStake",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "sourceStake",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeDepositAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeWithdrawAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "operationalSolAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeHistory",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "redelegate",
+      "discriminator": [
+        212,
+        82,
+        51,
+        160,
+        228,
+        80,
+        116,
+        35
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeDepositAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "reservePda",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "splitStakeAccount",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "splitStakeRentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "destValidatorAccount",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "redelegateStakeAccount",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeHistory",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeConfig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "pause",
+      "discriminator": [
+        211,
+        22,
+        221,
+        251,
+        74,
+        121,
+        193,
+        47
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pauseAuthority",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "resume",
+      "discriminator": [
+        1,
+        166,
+        51,
+        170,
+        127,
+        32,
+        141,
+        206
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pauseAuthority",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "withdrawStakeAccount",
+      "discriminator": [
+        188,
+        149,
+        218,
+        56,
+        91,
+        162,
+        188,
+        3
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "msolMint",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "burnMsolFrom",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "burnMsolAuthority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "treasuryMsolAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "stakeWithdrawAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeDepositAuthority",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "splitStakeAccount",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "splitStakeRentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "clock",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "stakeProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "reallocValidatorList",
+      "discriminator": [
+        176,
+        89,
+        24,
+        90,
+        20,
+        84,
+        3,
+        230
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "adminAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "validatorList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentFunds",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "reallocStakeList",
+      "discriminator": [
+        134,
+        169,
+        66,
+        237,
+        6,
+        106,
+        174,
+        18
+      ],
+      "accounts": [
+        {
+          "name": "state",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "adminAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "stakeList",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentFunds",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    }
+  ]
+}

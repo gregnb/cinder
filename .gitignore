@@ -1,0 +1,63 @@
+# Build directories
+build/
+build-*/
+build-release/
+cmake-build-*/
+
+# Qt generated files
+*.user
+*.autosave
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Compiled files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.app
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# IDE files
+.vscode/
+.idea/
+*.pro.user*
+
+# macOS
+.DS_Store
+*.dSYM/
+
+# Windows
+*.pdb
+*.ilk
+
+# Linux
+*.a
+
+# Translation build artifacts (source .ts files are tracked)
+*.qm
+
+# Node
+node_modules/
+www/dist/
+
+# Clangd cache
+.cache/
+
+# Environment / secrets
+.env
+.env.*
+
+# Logs
+*.log
+/tmp/

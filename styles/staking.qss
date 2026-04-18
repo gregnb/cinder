@@ -1,0 +1,362 @@
+#stakingTransparent {
+    background: transparent;
+    border: none;
+}
+
+#stakingViewport {
+    background: #12131f;
+}
+
+#stakingStatusLabel,
+#stakingFormStatus {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#stakingStatusLabel[tone="muted"],
+#stakingFormStatus[tone="muted"] {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#stakingStatusLabel[tone="success"],
+#stakingFormStatus[tone="success"] {
+    color: #14f195;
+}
+
+#stakingStatusLabel[tone="warning"] {
+    color: #f59e0b;
+}
+
+#stakingStatusLabel[tone="error"],
+#stakingFormStatus[tone="error"] {
+    color: #ef4444;
+}
+
+#stakingRewardsEmptyLabel {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    qproperty-alignment: AlignCenter;
+}
+
+#stakingLifecycleTitle {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#stakingLifecycleNode {
+    background: transparent;
+    border: none;
+}
+
+#stakingLifecycleDot {
+    background: rgba(255, 255, 255, 0.16);
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    border-radius: 6px;
+}
+
+#stakingLifecycleDot[railState="complete"] {
+    background: rgba(20, 241, 149, 0.85);
+    border-color: rgba(20, 241, 149, 0.85);
+}
+
+#stakingLifecycleDot[railState="current"] {
+    background: #3b82f6;
+    border-color: rgba(59, 130, 246, 0.35);
+}
+
+#stakingLifecycleConnector {
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    min-height: 2px;
+    max-height: 2px;
+    margin-top: 6px;
+}
+
+#stakingLifecycleConnector[railState="complete"] {
+    background: rgba(20, 241, 149, 0.8);
+}
+
+#stakingLifecycleNodeTitle {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 13px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#stakingLifecycleNodeTitle[railState="complete"],
+#stakingLifecycleNodeTitle[railState="current"] {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+#stakingLifecycleNodeSubtitle {
+    color: rgba(255, 255, 255, 0.38);
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}
+
+#stakingLifecycleNodeSubtitle[railState="current"] {
+    color: rgba(255, 255, 255, 0.58);
+}
+
+#stakingLifecycleNodeSubtitle[railState="complete"] {
+    color: rgba(20, 241, 149, 0.72);
+}
+
+#stakingLifecycleDescription {
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 13px;
+    line-height: 1.4;
+    background: transparent;
+    border: none;
+}
+
+#stakingSummaryLabel {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#stakingSearchInput {
+    background: rgba(22, 24, 42, 0.8);
+    color: {{textPrimary}};
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 14px;
+}
+
+#stakingSearchInput:focus {
+    border: 1px solid rgba(20, 241, 149, 0.4);
+}
+
+#stakingHeaderBtn {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 11px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    padding: 4px 0;
+}
+
+#stakingHeaderBtn:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#stakingHeaderBtn[activeSort="true"] {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+#stakingSortBtn {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+#stakingSortBtn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+}
+
+#stakingNoMatchLabel {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+    padding: 20px;
+    background: transparent;
+    border: none;
+}
+
+#stakingFormTitle {
+    color: {{textPrimary}};
+    font-size: 24px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#validatorInfoCard {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(30, 31, 55, 0.8), stop:1 rgba(25, 26, 45, 0.8));
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 16px;
+}
+
+#validatorInfoCard QLabel {
+    background: transparent;
+    border: none;
+}
+
+#stakingFormValidatorName {
+    color: {{textPrimary}};
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#stakingFormApy {
+    color: {{successGreen}};
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#stakingFormCommission {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+#stakingSeparator {
+    background: rgba(100, 100, 150, 0.2);
+    border: none;
+    max-height: 1px;
+}
+
+#stakingDetailLabel {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#stakingDetailValue {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#stakingAmountLabel {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#stakingMaxBtn {
+    background: rgba(100, 100, 150, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#stakingMaxBtn:hover {
+    background: rgba(100, 100, 150, 0.5);
+    color: {{textPrimary}};
+}
+
+#validatorRow {
+    border-radius: 8px;
+}
+
+#validatorRow:hover {
+    background: rgba(100, 100, 150, 0.15);
+}
+
+#validatorRow QLabel {
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="stakingValidatorName"] {
+    color: {{textPrimary}};
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QLabel[uiClass="stakingValidatorSub"] {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 11px;
+}
+
+QLabel[uiClass="stakingValidatorStake"] {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}
+
+QLabel[uiClass="stakingValidatorCommission"] {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+}
+
+QLabel[uiClass="stakingValidatorVersion"] {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+}
+
+#validatorIcon {
+    border-radius: 18px;
+    background: #2a2b53;
+    color: {{textPrimary}};
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#validatorIcon[hasAvatar="true"] {
+    background: transparent;
+}
+
+#stakingFormIcon {
+    border-radius: 22px;
+    background: #2a2b53;
+    color: {{textPrimary}};
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#stakingFormIcon[hasAvatar="true"] {
+    background: transparent;
+}
+
+#validatorApy {
+    color: #14f195;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#validatorApy[delinquent="true"] {
+    color: #ef4444;
+}
+
+#stakingStakeBtn {
+    background: qlineargradient(x1:0,y1:0,x2:1,y2:0,
+        stop:0 #7c3aed, stop:1 #3b82f6);
+    color: {{textPrimary}};
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#stakingStakeBtn:hover:enabled {
+    background: qlineargradient(x1:0,y1:0,x2:1,y2:0,
+        stop:0 #8b5cf6, stop:1 #60a5fa);
+}
+
+#stakingStakeBtn:disabled {
+    background: rgba(99, 102, 241, 0.25);
+    color: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(129, 140, 248, 0.25);
+}
+
+#stakingDetailDeltaPositive {
+    color: #14f195;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#stakingDetailDeltaNegative {
+    color: #ef4444;
+    font-size: 13px;
+    font-weight: 700;
+}

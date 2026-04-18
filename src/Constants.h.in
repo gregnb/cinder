@@ -1,0 +1,11 @@
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+
+#include <QString>
+
+namespace AppVersion {
+    inline constexpr const char* string = "@PROJECT_VERSION@";
+    inline const QString qstring = QStringLiteral("@PROJECT_VERSION@");
+} // namespace AppVersion
+
+#endif // CONSTANTS_H

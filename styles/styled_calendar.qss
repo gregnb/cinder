@@ -1,0 +1,75 @@
+#styledCalendar {
+    border: 1px solid {{dropdownListBorder}};
+    border-radius: 10px;
+}
+
+#styledCalendar QSpinBox {
+    background: {{dropdownListBg}};
+    color: {{textPrimary}};
+    border: 1px solid {{dropdownListBorder}};
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-size: 13px;
+}
+
+#styledCalendar QSpinBox::up-button,
+#styledCalendar QSpinBox::down-button {
+    background: transparent;
+    border: none;
+}
+
+#styledCalendarNavBar {
+    background: #1e1f37;
+    border-bottom: 1px solid {{dropdownListBorder}};
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+QToolButton[uiClass="styledCalendarNavButton"] {
+    color: {{textPrimary}};
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+QToolButton[uiClass="styledCalendarNavButton"]:hover {
+    background: {{dropdownItemHover}};
+}
+
+QToolButton[uiClass="styledCalendarNavButton"]::menu-indicator {
+    image: none;
+}
+
+QToolButton[uiClass="styledCalendarArrowButton"] {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QToolButton[uiClass="styledCalendarArrowButton"]:hover {
+    background: {{dropdownItemHover}};
+}
+
+#styledCalendarView,
+#styledCalendarViewport {
+    background: {{dropdownListBg}};
+    outline: none;
+    border: none;
+}
+
+#styledCalendarHeaderViewport {
+    background: #1e1f37;
+}
+
+#styledCalendarHeader::section {
+    background: #1e1f37;
+    color: rgba(255,255,255,0.35);
+    font-size: 10px;
+    font-weight: 600;
+    border: none;
+    padding: 6px 0;
+}

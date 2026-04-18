@@ -1,0 +1,120 @@
+#swapCard {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 {{cardBgStart}}, stop:1 {{cardBgEnd}});
+    border: 1px solid {{borderSubtle}};
+    border-radius: {{cardRadius}}px;
+}
+
+#swapCard > QLabel {
+    background: transparent;
+    border: none;
+}
+
+#swapSectionLabel {
+    color: {{textTertiary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+#swapEstimatedOutput {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 22px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#swapRefreshCountdown {
+    color: {{textTertiary}};
+    font-family: {{fontFamily}};
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}
+
+#swapQuoteDetails,
+#swapDetailRow {
+    background: transparent;
+    border: none;
+}
+
+#swapSeparator {
+    background: rgba(100, 100, 150, 0.15);
+    border: none;
+}
+
+#swapDetailLabel {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#swapDetailValue {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#swapDetailValue[highImpact="true"] {
+    color: {{errorRed}};
+}
+
+#swapStatusLabel {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#swapStatusLabel[isError="true"] {
+    color: {{errorRed}};
+}
+
+#swapPrimaryBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 {{solanaPurple}}, stop:1 {{solanaCyan}});
+    border: none;
+    border-radius: {{buttonRadius}}px;
+    font-family: {{fontFamily}};
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+#swapPrimaryBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #A855F7, stop:1 #22D3EE);
+}
+
+#swapPrimaryBtn:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #7B38CC, stop:1 #0099CC);
+}
+
+#swapPrimaryBtn:disabled {
+    background: rgba(80, 80, 120, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#swapFlipBtn {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid {{borderSubtle}};
+    border-radius: 20px;
+    font-size: 18px;
+    color: {{textPrimary}};
+}
+
+#swapFlipBtn:hover {
+    background: rgba(100, 100, 150, 0.3);
+    border: 1px solid rgba(100, 150, 255, 0.4);
+}

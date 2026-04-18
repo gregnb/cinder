@@ -1,0 +1,3045 @@
+{
+  "address": "TSWAPaqyCSx2KABk68Shruf4rp7CxcNi8hAsbdwmHbN",
+  "metadata": {
+    "name": "tensorswap",
+    "version": "3.1.0",
+    "spec": ""
+  },
+  "instructions": [
+    {
+      "name": "initUpdateTswap",
+      "discriminator": [
+        176,
+        211,
+        38,
+        213,
+        148,
+        238,
+        198,
+        187
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "feeVault",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "cosigner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "newOwner",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "initPool",
+      "discriminator": [
+        2,
+        129,
+        152,
+        94,
+        221,
+        40,
+        99,
+        94
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftAuthority",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "closePool",
+      "discriminator": [
+        78,
+        253,
+        165,
+        27,
+        159,
+        185,
+        29,
+        236
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftAuthority",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "depositNft",
+      "discriminator": [
+        218,
+        194,
+        186,
+        65,
+        136,
+        77,
+        76,
+        183
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftSource",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftMetadata",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "mintProof",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEdition",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pnftShared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "authRules",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdrawNft",
+      "discriminator": [
+        236,
+        16,
+        166,
+        183,
+        145,
+        160,
+        76,
+        86
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftDest",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftMetadata",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftEdition",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pnftShared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "authRules",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "depositSol",
+      "discriminator": [
+        234,
+        37,
+        71,
+        238,
+        136,
+        113,
+        255,
+        196
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdrawSol",
+      "discriminator": [
+        116,
+        28,
+        227,
+        101,
+        14,
+        24,
+        128,
+        160
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "buyNft",
+      "discriminator": [
+        79,
+        122,
+        5,
+        214,
+        179,
+        138,
+        42,
+        92
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "feeVault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftBuyerAcc",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftMetadata",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "buyer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEdition",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pnftShared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "authRules",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "sellNftTokenPool",
+      "discriminator": [
+        3,
+        147,
+        255,
+        125,
+        31,
+        221,
+        121,
+        182
+      ],
+      "accounts": [
+        {
+          "name": "shared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerAtaAcc",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEdition",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pnftShared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "tempEscrowTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "authRules",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "sellNftTradePool",
+      "discriminator": [
+        235,
+        87,
+        30,
+        114,
+        14,
+        107,
+        33,
+        72
+      ],
+      "accounts": [
+        {
+          "name": "shared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEdition",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pnftShared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "authRules",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "editPool",
+      "discriminator": [
+        1,
+        247,
+        233,
+        104,
+        101,
+        43,
+        190,
+        210
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "oldPool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "newPool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "oldSolEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "newSolEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftAuthority",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "reallocPool",
+      "discriminator": [
+        246,
+        126,
+        236,
+        121,
+        157,
+        148,
+        78,
+        188
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "cosigner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "initMarginAccount",
+      "discriminator": [
+        117,
+        221,
+        63,
+        212,
+        143,
+        49,
+        195,
+        102
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "closeMarginAccount",
+      "discriminator": [
+        247,
+        171,
+        9,
+        191,
+        199,
+        188,
+        196,
+        54
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "depositMarginAccount",
+      "discriminator": [
+        186,
+        233,
+        50,
+        35,
+        10,
+        167,
+        182,
+        114
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdrawMarginAccount",
+      "discriminator": [
+        22,
+        114,
+        138,
+        208,
+        216,
+        9,
+        187,
+        22
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "attachPoolToMargin",
+      "discriminator": [
+        205,
+        132,
+        227,
+        191,
+        68,
+        114,
+        18,
+        204
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "detachPoolFromMargin",
+      "discriminator": [
+        184,
+        249,
+        210,
+        149,
+        170,
+        150,
+        29,
+        244
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "setPoolFreeze",
+      "discriminator": [
+        15,
+        203,
+        195,
+        141,
+        170,
+        3,
+        175,
+        222
+      ],
+      "accounts": [
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "takeSnipe",
+      "discriminator": [
+        172,
+        156,
+        167,
+        202,
+        206,
+        184,
+        146,
+        165
+      ],
+      "accounts": [
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "editPoolInPlace",
+      "discriminator": [
+        189,
+        27,
+        65,
+        1,
+        93,
+        184,
+        44,
+        219
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdrawTswapFees",
+      "discriminator": [
+        77,
+        156,
+        21,
+        107,
+        197,
+        152,
+        118,
+        40
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "cosigner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "destination",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "list",
+      "discriminator": [
+        54,
+        174,
+        193,
+        67,
+        17,
+        41,
+        132,
+        38
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftSource",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftMetadata",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftEdition",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pnftShared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "authRules",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "delist",
+      "discriminator": [
+        55,
+        136,
+        205,
+        107,
+        107,
+        173,
+        4,
+        31
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftDest",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftMetadata",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftEdition",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pnftShared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "authRules",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "buySingleListing",
+      "discriminator": [
+        125,
+        74,
+        184,
+        97,
+        65,
+        126,
+        150,
+        236
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "feeVault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftBuyerAcc",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftMetadata",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "buyer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEdition",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destTokenRecord",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pnftShared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "authRules",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "editSingleListing",
+      "discriminator": [
+        197,
+        216,
+        80,
+        77,
+        183,
+        58,
+        81,
+        211
+      ],
+      "accounts": [
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdrawMmFee",
+      "discriminator": [
+        2,
+        28,
+        155,
+        66,
+        84,
+        89,
+        229,
+        14
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdrawMarginAccountCpi",
+      "discriminator": [
+        189,
+        211,
+        94,
+        58,
+        250,
+        74,
+        47,
+        165
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bidState",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "destination",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdrawMarginAccountCpiTcomp",
+      "discriminator": [
+        56,
+        184,
+        36,
+        190,
+        12,
+        200,
+        75,
+        183
+      ],
+      "accounts": [
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "bidState",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "destination",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdrawMarginAccountCpiTlock",
+      "discriminator": [
+        211,
+        58,
+        117,
+        216,
+        172,
+        135,
+        241,
+        239
+      ],
+      "accounts": [
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "orderState",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "owner",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "destination",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "buyNftT22",
+      "discriminator": [
+        126,
+        148,
+        233,
+        229,
+        111,
+        93,
+        198,
+        189
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "feeVault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftBuyerAcc",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "buyer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "depositNftT22",
+      "discriminator": [
+        149,
+        188,
+        188,
+        239,
+        137,
+        180,
+        70,
+        49
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftSource",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "mintProof",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "sellNftTokenPoolT22",
+      "discriminator": [
+        237,
+        108,
+        150,
+        75,
+        158,
+        23,
+        73,
+        198
+      ],
+      "accounts": [
+        {
+          "name": "shared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerAtaAcc",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "sellNftTradePoolT22",
+      "discriminator": [
+        229,
+        87,
+        163,
+        142,
+        169,
+        161,
+        153,
+        192
+      ],
+      "accounts": [
+        {
+          "name": "shared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "withdrawNftT22",
+      "discriminator": [
+        114,
+        20,
+        152,
+        134,
+        215,
+        83,
+        168,
+        65
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftDest",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "buySingleListingT22",
+      "discriminator": [
+        227,
+        147,
+        239,
+        21,
+        200,
+        147,
+        177,
+        51
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "feeVault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftBuyerAcc",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "buyer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "listT22",
+      "discriminator": [
+        201,
+        147,
+        53,
+        128,
+        33,
+        76,
+        152,
+        18
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftSource",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "delistT22",
+      "discriminator": [
+        221,
+        100,
+        112,
+        167,
+        75,
+        24,
+        127,
+        212
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftDest",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "wnsBuyNft",
+      "discriminator": [
+        155,
+        20,
+        250,
+        204,
+        195,
+        80,
+        193,
+        87
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "feeVault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftBuyerAcc",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "solEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "buyer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "approveAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "distribution",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "wnsProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "distributionProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "extraMetas",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "wnsDepositNft",
+      "discriminator": [
+        65,
+        38,
+        69,
+        118,
+        170,
+        178,
+        230,
+        96
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftSource",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "mintProof",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "approveAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "distribution",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "wnsProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "distributionProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "extraMetas",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "wnsSellNftTokenPool",
+      "discriminator": [
+        147,
+        133,
+        222,
+        154,
+        25,
+        89,
+        9,
+        223
+      ],
+      "accounts": [
+        {
+          "name": "shared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "ownerAtaAcc",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "approveAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "distribution",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "wnsProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "distributionProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "extraMetas",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "wnsSellNftTradePool",
+      "discriminator": [
+        49,
+        254,
+        104,
+        4,
+        83,
+        32,
+        218,
+        208
+      ],
+      "accounts": [
+        {
+          "name": "shared",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "marginAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "approveAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "distribution",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "wnsProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "distributionProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "extraMetas",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "wnsWithdrawNft",
+      "discriminator": [
+        195,
+        164,
+        37,
+        217,
+        81,
+        102,
+        227,
+        222
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "pool",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "whitelist",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftDest",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftReceipt",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "approveAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "distribution",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "wnsProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "distributionProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "extraMetas",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "wnsBuySingleListing",
+      "discriminator": [
+        130,
+        174,
+        216,
+        180,
+        139,
+        91,
+        5,
+        57
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "feeVault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftBuyerAcc",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "buyer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "takerBroker",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "approveAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "distribution",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "wnsProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "distributionProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "extraMetas",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "wnsList",
+      "discriminator": [
+        110,
+        147,
+        194,
+        148,
+        95,
+        238,
+        99,
+        89
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftSource",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "approveAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "distribution",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "wnsProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "distributionProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "extraMetas",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "wnsDelist",
+      "discriminator": [
+        75,
+        64,
+        98,
+        63,
+        253,
+        243,
+        234,
+        33
+      ],
+      "accounts": [
+        {
+          "name": "tswap",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftDest",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "nftMint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "nftEscrow",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "singleListing",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "owner",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rent",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "approveAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "distribution",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "wnsProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "distributionProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "extraMetas",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    }
+  ]
+}

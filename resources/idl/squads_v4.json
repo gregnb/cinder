@@ -1,0 +1,1160 @@
+{
+  "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+  "metadata": {
+    "name": "squads_multisig_program",
+    "version": "2.0.0",
+    "spec": ""
+  },
+  "instructions": [
+    {
+      "name": "programConfigInit",
+      "discriminator": [
+        193,
+        83,
+        171,
+        185,
+        209,
+        90,
+        88,
+        233
+      ],
+      "accounts": [
+        {
+          "name": "programConfig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "initializer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "programConfigSetAuthority",
+      "discriminator": [
+        212,
+        239,
+        57,
+        126,
+        64,
+        150,
+        181,
+        52
+      ],
+      "accounts": [
+        {
+          "name": "programConfig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "programConfigSetMultisigCreationFee",
+      "discriminator": [
+        230,
+        53,
+        88,
+        169,
+        133,
+        120,
+        140,
+        90
+      ],
+      "accounts": [
+        {
+          "name": "programConfig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "programConfigSetTreasury",
+      "discriminator": [
+        32,
+        70,
+        26,
+        31,
+        32,
+        31,
+        164,
+        58
+      ],
+      "accounts": [
+        {
+          "name": "programConfig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "authority",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "multisigCreate",
+      "discriminator": [
+        168,
+        110,
+        149,
+        17,
+        248,
+        131,
+        238,
+        184
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "createKey",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "creator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "multisigCreateV2",
+      "discriminator": [
+        143,
+        174,
+        203,
+        191,
+        174,
+        207,
+        147,
+        197
+      ],
+      "accounts": [
+        {
+          "name": "programConfig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "treasury",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "createKey",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "creator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "multisigAddMember",
+      "discriminator": [
+        80,
+        150,
+        102,
+        239,
+        197,
+        230,
+        58,
+        139
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "configAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "multisigRemoveMember",
+      "discriminator": [
+        4,
+        97,
+        126,
+        17,
+        122,
+        215,
+        95,
+        128
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "configAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "multisigSetTimeLock",
+      "discriminator": [
+        60,
+        88,
+        181,
+        89,
+        125,
+        108,
+        167,
+        134
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "configAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "multisigChangeThreshold",
+      "discriminator": [
+        164,
+        76,
+        46,
+        161,
+        62,
+        246,
+        191,
+        172
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "configAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "multisigSetConfigAuthority",
+      "discriminator": [
+        213,
+        124,
+        248,
+        49,
+        202,
+        99,
+        15,
+        242
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "configAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "multisigSetRentCollector",
+      "discriminator": [
+        126,
+        56,
+        189,
+        253,
+        207,
+        215,
+        103,
+        28
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "configAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "multisigAddSpendingLimit",
+      "discriminator": [
+        171,
+        215,
+        21,
+        125,
+        69,
+        183,
+        226,
+        81
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "configAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "spendingLimit",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "multisigRemoveSpendingLimit",
+      "discriminator": [
+        142,
+        212,
+        233,
+        192,
+        206,
+        122,
+        232,
+        127
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "configAuthority",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "spendingLimit",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentCollector",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "configTransactionCreate",
+      "discriminator": [
+        5,
+        65,
+        67,
+        104,
+        60,
+        237,
+        205,
+        56
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transaction",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "creator",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "configTransactionExecute",
+      "discriminator": [
+        209,
+        6,
+        67,
+        145,
+        173,
+        217,
+        162,
+        1
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "member",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transaction",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "vaultTransactionCreate",
+      "discriminator": [
+        237,
+        50,
+        86,
+        23,
+        42,
+        181,
+        88,
+        252
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transaction",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "creator",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "vaultTransactionExecute",
+      "discriminator": [
+        1,
+        21,
+        36,
+        10,
+        18,
+        71,
+        197,
+        8
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transaction",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "member",
+          "writable": false,
+          "signer": true
+        }
+      ]
+    },
+    {
+      "name": "batchCreate",
+      "discriminator": [
+        21,
+        137,
+        124,
+        159,
+        221,
+        217,
+        122,
+        194
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "batch",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "creator",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "batchAddTransaction",
+      "discriminator": [
+        59,
+        60,
+        91,
+        9,
+        38,
+        3,
+        60,
+        172
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "proposal",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "batch",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transaction",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "member",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "batchExecuteTransaction",
+      "discriminator": [
+        196,
+        94,
+        131,
+        2,
+        155,
+        215,
+        163,
+        73
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "member",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "batch",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transaction",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "proposalCreate",
+      "discriminator": [
+        213,
+        116,
+        66,
+        19,
+        231,
+        72,
+        40,
+        123
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "creator",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "rentPayer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "proposalActivate",
+      "discriminator": [
+        156,
+        221,
+        15,
+        73,
+        184,
+        24,
+        252,
+        60
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "member",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "proposalApprove",
+      "discriminator": [
+        10,
+        150,
+        208,
+        252,
+        210,
+        251,
+        79,
+        48
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "member",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "proposalReject",
+      "discriminator": [
+        22,
+        88,
+        33,
+        178,
+        42,
+        247,
+        243,
+        53
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "member",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "proposalCancel",
+      "discriminator": [
+        12,
+        189,
+        202,
+        195,
+        205,
+        104,
+        227,
+        73
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "member",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "spendingLimitUse",
+      "discriminator": [
+        73,
+        232,
+        3,
+        189,
+        169,
+        253,
+        100,
+        27
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "member",
+          "writable": false,
+          "signer": true
+        },
+        {
+          "name": "spendingLimit",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "vault",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destination",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "mint",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "vaultTokenAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "destinationTokenAccount",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "tokenProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "configTransactionAccountsClose",
+      "discriminator": [
+        253,
+        208,
+        231,
+        53,
+        236,
+        241,
+        35,
+        103
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transaction",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentCollector",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "vaultTransactionAccountsClose",
+      "discriminator": [
+        8,
+        62,
+        213,
+        86,
+        163,
+        25,
+        120,
+        84
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transaction",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentCollector",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "vaultBatchTransactionAccountClose",
+      "discriminator": [
+        119,
+        108,
+        173,
+        144,
+        88,
+        110,
+        55,
+        1
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "proposal",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "batch",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "transaction",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentCollector",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    },
+    {
+      "name": "batchAccountsClose",
+      "discriminator": [
+        148,
+        6,
+        72,
+        116,
+        221,
+        21,
+        190,
+        108
+      ],
+      "accounts": [
+        {
+          "name": "multisig",
+          "writable": false,
+          "signer": false
+        },
+        {
+          "name": "proposal",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "batch",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "rentCollector",
+          "writable": true,
+          "signer": false
+        },
+        {
+          "name": "systemProgram",
+          "writable": false,
+          "signer": false
+        }
+      ]
+    }
+  ]
+}

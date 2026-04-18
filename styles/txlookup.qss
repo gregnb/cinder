@@ -1,0 +1,306 @@
+#txaSubtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+[uiClass="txaTransparent"] {
+    background: transparent;
+    border: none;
+}
+
+#txTabButton {
+    background: rgba(30, 31, 55, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#txTabButton:hover {
+    background: rgba(30, 31, 55, 0.8);
+    color: white;
+}
+
+#txTabButtonActive {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #1e2d4d, stop:1 #223255);
+    color: white;
+    border: 1px solid #3a5a8a;
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#txTabButtonActive:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #243560, stop:1 #283a68);
+    border: 1px solid #4a6a9a;
+}
+
+#txaCard {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 rgba(30, 31, 55, 0.6), stop:1 rgba(25, 26, 45, 0.6));
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 16px;
+}
+
+#txaSeparator {
+    background: rgba(100, 100, 150, 0.15);
+    border: none;
+    max-height: 1px;
+}
+
+QLabel[uiClass="txaLabel"] {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaValue"] {
+    color: {{textPrimary}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaMonoValue"] {
+    color: {{textPrimary}};
+    font-size: 13px;
+    font-family: "JetBrains Mono", "SF Mono", "Menlo";
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaAddressValue"] {
+    color: #10b981;
+    font-size: 13px;
+    font-family: "JetBrains Mono", "SF Mono", "Menlo";
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaAddressValue"][addressHover="true"] {
+    color: #fde68a;
+}
+
+#txaCustomTooltip {
+    background: #1e1f37;
+    color: {{textPrimary}};
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-family: "JetBrains Mono", "SF Mono", "Menlo";
+}
+
+#txaCopyBtn {
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    border-radius: 6px;
+}
+
+#txaCopyBtn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+#txaSummaryIcon {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    background: transparent;
+    border: none;
+}
+
+#txaResultBadge {
+    background: rgba(100, 100, 100, 0.15);
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+#txaResultBadge[tone="success"] {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+#txaResultBadge[tone="error"] {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+QLabel[uiClass="txaConfirmLabel"] {
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaConfirmLabel"][tone="success"] {
+    color: #10b981;
+}
+
+QLabel[uiClass="txaConfirmLabel"][tone="error"] {
+    color: #ef4444;
+}
+
+#txaCardTitleSmall {
+    color: {{textPrimary}};
+    font-size: 15px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#txaPopupFrame {
+    background: #1a1e38;
+    border: 1px solid rgba(100, 100, 150, 0.35);
+    border-radius: 8px;
+}
+
+#txaPopupName {
+    color: {{textPrimary}};
+    font-size: 13px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#txaPopupValue {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#txaAccordionHeader {
+    background: transparent;
+    border: none;
+    text-align: left;
+    padding: 0;
+}
+
+#txaAccordionHeader:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+#txaInnerCard {
+    background: rgba(20, 21, 38, 0.5);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    border-radius: 12px;
+}
+
+QLabel[uiClass="txaProgramValue"] {
+    color: #10b981;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaSummaryTitle"] {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaSummaryDim"] {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaSummaryAmt"] {
+    color: {{textPrimary}};
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaSummarySym"] {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaLegendName"] {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaLegendValue"] {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaInnerInstructionsLabel"] {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaColHeader"] {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaCell"] {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaChangeLabel"] {
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaChangeLabel"][tone="positive"] {
+    color: #10b981;
+}
+
+QLabel[uiClass="txaChangeLabel"][tone="negative"] {
+    color: #ef4444;
+}
+
+QLabel[uiClass="txaEmptyText"] {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="txaLogLine"] {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-family: "JetBrains Mono", "SF Mono", "Menlo";
+    background: transparent;
+    border: none;
+}

@@ -1,0 +1,642 @@
+/* ── SendReceive Feature Styles (Phase A: static styles) ───────────── */
+
+#srAddRecipientBtn {
+    background: transparent;
+    color: rgba(180, 160, 255, 0.9);
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: {{fontFamily}};
+    padding: 6px 0px;
+}
+
+#srAddRecipientBtn:hover {
+    color: {{textPrimary}};
+}
+
+#srTransparentRow {
+    background: transparent;
+    border: none;
+}
+
+#reviewHeaderRow {
+    background: transparent;
+    border: none;
+}
+
+#srMutedLabel13 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#srSubtleDesc14 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#srSubtleInfo13 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#srStatusNeutral13 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="srStatusLabel"] {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="srStatusLabel"][tone="neutral"] {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+QLabel[uiClass="srStatusLabel"][tone="error"] {
+    color: #ef4444;
+}
+
+#styledCheckbox[uiClass="ctUploadCheck"] {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="ctUploadWarn"] {
+    color: #ef4444;
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#burnWarning {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-radius: 10px;
+}
+
+#burnWarning QLabel {
+    background: transparent;
+    border: none;
+}
+
+#srWarningIcon {
+    font-size: 20px;
+}
+
+#srWarningText {
+    color: rgba(245, 200, 100, 0.9);
+    font-size: 13px;
+}
+
+#srCapsHeader12 {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+}
+
+#closeAccountRow {
+    background: rgba(22, 24, 42, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    border-radius: 10px;
+}
+
+#closeAccountRow:hover {
+    background: rgba(30, 32, 55, 0.9);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+}
+
+#closeAccountRow QLabel,
+#closeAccountRow QCheckBox {
+    background: transparent;
+    border: none;
+}
+
+#srCloseTokenName {
+    color: {{textPrimary}};
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#srCloseAddress {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-family: "Menlo";
+}
+
+#srCloseBalance {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 14px;
+}
+
+#srNonceField {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    background: rgba(22, 24, 42, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    border-radius: 10px;
+    padding: 12px 16px;
+}
+
+#srNonceField[uiClass="srNonceAuthorityField"] {
+    font-family: "Menlo";
+}
+
+#srFeeNote12 {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#ctSection {
+    background: rgba(22, 24, 42, 0.6);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    border-radius: 12px;
+}
+
+#ctSection QLabel {
+    background: transparent;
+    border: none;
+}
+
+#ctSectionTitle16 {
+    color: {{textPrimary}};
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#ctInput {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 10px;
+    color: {{textPrimary}};
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+#ctInput:focus {
+    border: 1px solid rgba(147, 130, 220, 0.5);
+}
+
+#ctDescriptionInput {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 10px;
+    color: {{textPrimary}};
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+#ctDescriptionInput:focus {
+    border: 1px solid rgba(147, 130, 220, 0.5);
+}
+
+#ctSpin {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 10px;
+    color: {{textPrimary}};
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+#ctSpin:focus {
+    border: 1px solid rgba(147, 130, 220, 0.5);
+}
+
+#ctSpin::up-button,
+#ctSpin::down-button {
+    width: 20px;
+    border: none;
+}
+
+#ctSpin::up-arrow,
+#ctSpin::down-arrow {
+    image: none;
+}
+
+#ctHint11 {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}
+
+#ctHint11Dim {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}
+
+#ctHint12 {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#ctSubtleInfo13 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#ctFeeSep {
+    color: rgba(100, 100, 150, 0.2);
+}
+
+#srReviewSummary {
+    background: rgba(25, 28, 50, 0.6);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    border-radius: 10px;
+}
+
+#srReviewSummary QLabel {
+    background: transparent;
+    border: none;
+}
+
+#srTransferFeeWarning {
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-radius: 10px;
+    background: transparent;
+}
+
+#srWarningTitle14 {
+    color: #f59e0b;
+    font-size: 14px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#srWarningBody12 {
+    color: rgba(245, 158, 11, 0.75);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#srSectionTitle14 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#srMutedLabel12 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#srRecipientName14 {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#srRecipientAmount14 {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#srSummaryStrong14 {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#srKvLabel13 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#srKvValue13 {
+    color: white;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#srKvSep {
+    background: rgba(100, 100, 150, 0.15);
+    border: none;
+    max-height: 1px;
+}
+
+#srTxOverviewBox {
+    background: rgba(22, 24, 42, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    border-radius: 10px;
+}
+
+#srTxOverviewBox QLabel {
+    background: transparent;
+    border: none;
+}
+
+#srNonceValue13 {
+    color: white;
+    font-size: 13px;
+    font-family: "JetBrains Mono", "SF Mono", "Menlo";
+    background: transparent;
+    border: none;
+}
+
+#srTxDetailBox {
+    background: rgba(22, 24, 42, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    border-radius: 10px;
+}
+
+#srTxDetailBox QLabel {
+    background: transparent;
+    border: none;
+}
+
+#srInstructionLabel13 {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#srInstructionMuted13 {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#srInstructionTotal12 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    margin-top: 4px;
+}
+
+#srReviewLabel14 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#srReviewValue14 {
+    color: white;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#srReviewValueStrong14 {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#srReviewValueMono14 {
+    color: white;
+    font-size: 14px;
+    font-family: monospace;
+    background: transparent;
+    border: none;
+}
+
+#srReviewSep {
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    max-height: 1px;
+}
+
+#srCapsTitle12 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+}
+
+#srExtTitle15 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#srExtensionRow {
+    background: rgba(16, 185, 129, 0.06);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 10px;
+}
+
+#srExtensionRow QLabel {
+    background: transparent;
+    border: none;
+}
+
+#srExtensionCheck {
+    color: #10b981;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+}
+
+#srExtensionLabel {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#srValueStrong13 {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#srSubtleCost12 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#srFeeLabel12 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#srCostSep {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    max-height: 1px;
+}
+
+#srTotalStrong15 {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#srErrorStrong13 {
+    color: #ef4444;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+/* ── SendReceive Success Page ─────────────────────────────────── */
+
+#srSuccessCenterBox,
+#srSuccessBtnRow,
+#srSuccessSpinner {
+    background: transparent;
+    border: none;
+}
+
+#srSuccessTitle {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#srSuccessAmount {
+    color: {{textSecondary}};
+    font-size: 18px;
+    background: transparent;
+    border: none;
+}
+
+#srSuccessDetailCard {
+    background: rgba(25, 28, 50, 0.6);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    border-radius: 10px;
+}
+
+#srSuccessRow {
+    background: transparent;
+    border: none;
+}
+
+#srSuccessLabel {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#srSuccessValue {
+    color: white;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+#srSuccessSep {
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    max-height: 1px;
+}
+
+QWidget[uiClass="srSuccessBadge"] {
+    border-radius: 4px;
+    border: none;
+}
+
+QWidget[uiClass="srSuccessBadge"][tone="confirming"] {
+    background: rgba(250, 200, 50, 0.12);
+}
+
+QWidget[uiClass="srSuccessBadge"][tone="confirmed"] {
+    background: rgba(52, 211, 153, 0.15);
+}
+
+QWidget[uiClass="srSuccessBadge"][tone="finalized"] {
+    background: rgba(16, 185, 129, 0.2);
+}
+
+QWidget[uiClass="srSuccessBadge"][tone="failed"] {
+    background: rgba(239, 68, 68, 0.2);
+}
+
+QLabel[uiClass="srSuccessResultText"] {
+    font-size: 10px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="srSuccessResultText"][tone="confirming"] {
+    color: rgba(253, 214, 99, 1.0);
+}
+
+QLabel[uiClass="srSuccessResultText"][tone="confirmed"],
+QLabel[uiClass="srSuccessResultText"][tone="finalized"] {
+    color: rgba(52, 211, 153, 1.0);
+}
+
+QLabel[uiClass="srSuccessResultText"][tone="failed"] {
+    color: rgba(248, 113, 113, 1.0);
+}
+
+#srSuccessSecondaryBtn {
+    background: rgba(100, 100, 150, 0.15);
+    color: white;
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#srSuccessSecondaryBtn:hover {
+    background: rgba(100, 100, 150, 0.25);
+    border: 1px solid rgba(100, 100, 150, 0.45);
+}

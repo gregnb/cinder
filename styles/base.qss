@@ -1,0 +1,1042 @@
+/* ══════════════════════════════════════════════════════════════
+   Solana Desktop Wallet — Theme Stylesheet
+   Tokens like {{tokenName}} are replaced at load time from Theme.h
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Global ───────────────────────────────────────────────────── */
+
+QMainWindow {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 {{bgGradientStart}}, stop:0.15 {{bgGradientMid}}, stop:1 {{bgGradientEnd}});
+}
+
+QLabel {
+    color: {{textPrimary}};
+    background: transparent;
+}
+
+QPushButton {
+    background: transparent;
+}
+
+/* ── Content Containers ──────────────────────────────────────── */
+
+QStackedWidget {
+    background: {{bgGradientEnd}};
+    border: none;
+}
+
+QScrollArea {
+    border: none;
+}
+
+QWidget[uiClass="content"],
+QWidget[uiClass="contentViewport"] {
+    background: {{bgGradientEnd}};
+}
+
+QWidget[uiClass="agentsTransparent"],
+QStackedWidget[uiClass="agentsTransparent"] {
+    background: transparent;
+    border: none;
+}
+
+QWidget[uiClass="agentsTransparentBg"] {
+    background: transparent;
+}
+
+#agentsSectionDesc {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#agentsEmptyState {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    font-style: italic;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsColHeader"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 11px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#agentsSectionTitle {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 15px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+#agentsServerLabel {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+#agentsPathBullet {
+    color: {{textSecondary}};
+    font-size: 8px;
+    background: transparent;
+    border: none;
+}
+
+#agentsServerPath {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsPolicyTitle"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 22px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QPushButton[uiClass="agentsEditIconBtn"] {
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    border-radius: 6px;
+}
+
+QPushButton[uiClass="agentsEditIconBtn"]:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+QLineEdit[uiClass="agentsPolicyNameInput"] {
+    background: rgba(30, 31, 55, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 12px;
+    color: white;
+    padding: 12px 16px;
+    font-size: 15px;
+    selection-background-color: rgba(100, 150, 255, 0.3);
+}
+
+QLineEdit[uiClass="agentsPolicyNameInput"]:focus {
+    border: 1px solid rgba(100, 150, 255, 0.5);
+}
+
+QPushButton[uiClass="agentsSaveIconBtn"] {
+    background: #3b82f6;
+    border: 1px solid #3b82f6;
+    border-radius: 8px;
+}
+
+QPushButton[uiClass="agentsSaveIconBtn"]:hover {
+    background: #4b92ff;
+    border-color: #4b92ff;
+}
+
+#agentsServerStatus {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+#agentsServerStatus[statusType="success"] {
+    color: {{successGreen}};
+}
+
+#agentsServerStatus[statusType="error"] {
+    color: {{errorRed}};
+}
+
+#agentsTestResult {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+#agentsTestResult[statusType="success"] {
+    color: {{successGreen}};
+}
+
+#agentsTestResult[statusType="error"] {
+    color: {{errorRed}};
+}
+
+QLineEdit[uiClass="agentsCreateInput"] {
+    background: rgba(22, 24, 42, 0.8);
+    color: white;
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 14px;
+}
+
+QLineEdit[uiClass="agentsCreateInput"]:focus {
+    border: 1px solid rgba(20, 241, 149, 0.4);
+}
+
+QLineEdit[uiClass="agentsResourceSearch"] {
+    background: rgba(22, 24, 42, 0.8);
+    color: white;
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-size: 13px;
+}
+
+QLineEdit[uiClass="agentsResourceSearch"]:focus {
+    border: 1px solid rgba(20, 241, 149, 0.4);
+}
+
+
+QLabel[uiClass="agentsKeyLabel"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsKeyValue"] {
+    color: {{textPrimary}};
+    font-family: "SF Mono", "Menlo", monospace;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsPolicyName"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 20px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsPolicyKey"] {
+    color: {{textSecondary}};
+    font-family: "SF Mono", "Menlo", monospace;
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsPolicyStatLabel"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsPolicyStatValue"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 15px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsPolicyStatValue"][pendingHot="true"] {
+    color: #EAB308;
+}
+
+QLabel[uiClass="agentsPolicyChevron"] {
+    color: {{textSecondary}};
+    font-size: 28px;
+    background: transparent;
+    border: none;
+}
+
+QWidget[policyCard="true"] {
+    background: rgba(22, 24, 42, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 12px;
+}
+
+QWidget[policyCard="true"][hovered="true"] {
+    background: rgba(30, 33, 58, 0.95);
+    border: 1px solid rgba(100, 100, 150, 0.4);
+    border-radius: 12px;
+}
+
+QLabel[uiClass="agentsWalletLabel"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QPushButton[uiClass="agentsAllowAllBtn"] {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22C55E;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    border-radius: 8px;
+    padding: 0 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+QPushButton[uiClass="agentsAllowAllBtn"]:hover {
+    background: rgba(34, 197, 94, 0.25);
+}
+
+QPushButton[uiClass="agentsApprovalAllBtn"] {
+    background: rgba(234, 179, 8, 0.15);
+    color: #EAB308;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+    border-radius: 8px;
+    padding: 0 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+QPushButton[uiClass="agentsApprovalAllBtn"]:hover {
+    background: rgba(234, 179, 8, 0.25);
+}
+
+QLabel[uiClass="agentsResourceName"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsResourceDesc"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QPushButton[uiClass="agentsWalletAccessBtn"],
+QPushButton[uiClass="agentsResourceAccessBtn"] {
+    background: rgba(100, 100, 150, 0.06);
+    color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(100, 100, 150, 0.35);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+QPushButton[uiClass="agentsWalletAccessBtn"]:hover,
+QPushButton[uiClass="agentsResourceAccessBtn"]:hover {
+    background: rgba(100, 100, 150, 0.12);
+}
+
+QPushButton[uiClass="agentsWalletAccessBtn"][segmentPos="left"],
+QPushButton[uiClass="agentsResourceAccessBtn"][segmentPos="left"] {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: none;
+}
+
+QPushButton[uiClass="agentsResourceAccessBtn"][segmentPos="mid"] {
+    border-radius: 0;
+    border-right: none;
+}
+
+QPushButton[uiClass="agentsWalletAccessBtn"][segmentPos="right"],
+QPushButton[uiClass="agentsResourceAccessBtn"][segmentPos="right"] {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+QPushButton[uiClass="agentsWalletAccessBtn"][selected="true"],
+QPushButton[uiClass="agentsResourceAccessBtn"][selected="true"] {
+    font-weight: 700;
+}
+
+QPushButton[uiClass="agentsWalletAccessBtn"][selected="true"][tone="success"],
+QPushButton[uiClass="agentsResourceAccessBtn"][selected="true"][tone="success"] {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22C55E;
+    border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+QPushButton[uiClass="agentsWalletAccessBtn"][selected="true"][tone="warning"],
+QPushButton[uiClass="agentsResourceAccessBtn"][selected="true"][tone="warning"] {
+    background: rgba(234, 179, 8, 0.15);
+    color: #EAB308;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+QPushButton[uiClass="agentsWalletAccessBtn"][selected="true"][tone="danger"],
+QPushButton[uiClass="agentsResourceAccessBtn"][selected="true"][tone="danger"] {
+    background: rgba(239, 68, 68, 0.12);
+    color: rgba(239, 68, 68, 0.7);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+QWidget[uiClass="agentsProviderCard"] {
+    background: rgba(22, 24, 42, 0.8);
+    border: 1px solid rgba(100, 100, 150, 0.25);
+    border-radius: 12px;
+}
+
+#agentsApprovalCard,
+QWidget[uiClass="agentsApprovalCard"] {
+    background: rgba(234, 179, 8, 0.08);
+    border: 1px solid rgba(234, 179, 8, 0.3);
+    border-radius: 12px;
+}
+
+QLabel[uiClass="agentsApprovalTitle"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsApprovalMeta"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QWidget[uiClass="agentsCodeBlock"] {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(100, 100, 150, 0.15);
+    border-radius: 8px;
+}
+
+QWidget[uiClass="agentsCodeBlockStrong"] {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 8px;
+}
+
+QWidget[uiClass="agentsCodeTopBar"] {
+    background: rgba(100, 100, 150, 0.08);
+    border: none;
+    border-bottom: 1px solid rgba(100, 100, 150, 0.15);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+QLabel[uiClass="agentsCodeLang"] {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: {{fontFamily}};
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsCodeContent"] {
+    font-family: "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    background: transparent;
+    border: none;
+    padding: 10px 14px;
+}
+
+QLabel[uiClass="agentsCodeContentPadded"] {
+    font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    background: transparent;
+    border: none;
+    padding: 12px 16px;
+}
+
+QLabel[uiClass="agentsProviderName"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsProviderConfigLabel"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QPushButton[uiClass="agentsApproveBtn"] {
+    background-color: #1a5c2e;
+    color: white;
+    border: 1px solid #28753d;
+    border-radius: 8px;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+QPushButton[uiClass="agentsApproveBtn"]:hover {
+    background-color: #1f6b35;
+}
+
+QPushButton[uiClass="agentsCreateBtn"] {
+    background-color: #1a5c2e;
+    color: white;
+    border: 1px solid #28753d;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton[uiClass="agentsCreateBtn"]:hover {
+    background-color: #1f6b35;
+    border: 1px solid #359050;
+}
+
+QFrame[uiClass="agentsConfirmCard"] {
+    background: {{bgGradientEnd}};
+    border: 1px solid {{borderSubtle}};
+    border-radius: 12px;
+}
+
+QLabel[uiClass="agentsConfirmTitle"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 20px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsConfirmDesc"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 15px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsConfirmList"] {
+    color: {{textPrimary}};
+    font-family: "SF Mono", "Menlo", monospace;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+}
+
+QPlainTextEdit[uiClass="agentsResultViewer"] {
+    background: rgba(10, 12, 28, 0.6);
+    color: {{textPrimary}};
+    border: 1px solid rgba(100, 100, 150, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    font-family: "SF Mono", "Menlo", monospace;
+    font-size: 13px;
+}
+
+QPushButton[uiClass="agentsConfirmCancelBtn"] {
+    background: transparent;
+    border: 1px solid {{borderSubtle}};
+    border-radius: 8px;
+    padding: 8px 20px;
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 15px;
+}
+
+QPushButton[uiClass="agentsConfirmCancelBtn"]:hover {
+    background: rgba(100, 100, 150, 0.1);
+}
+
+QPushButton[uiClass="agentsConfirmDangerBtn"] {
+    background-color: #6b1d1d;
+    color: white;
+    border: 1px solid #8b3535;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-family: {{fontFamily}};
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton[uiClass="agentsConfirmDangerBtn"]:hover {
+    background-color: #7a2222;
+}
+
+QPushButton[uiClass="agentsNeutralBtn"] {
+    background: rgba(30, 31, 55, 0.6);
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(100, 100, 150, 0.3);
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+QPushButton[uiClass="agentsNeutralBtn"]:hover {
+    background: rgba(30, 31, 55, 0.9);
+    color: white;
+}
+
+QPushButton[uiClass="agentsDangerBtn"] {
+    background-color: #6b1d1d;
+    color: white;
+    border: 1px solid #8b3535;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+QPushButton[uiClass="agentsDangerBtn"]:hover {
+    background-color: #7d2424;
+    border: 1px solid #a04040;
+}
+
+QPushButton[uiClass="agentsCopyIconBtn"] {
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+}
+
+QPushButton[uiClass="agentsCopyIconBtn"]:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+QPushButton[uiClass="agentsCopyIconBtn"][copied="true"] {
+    color: #22C55E;
+    font-weight: 700;
+}
+
+QPushButton[uiClass="agentsCopyIconBtn"][copied="true"][copySize="14"] {
+    font-size: 14px;
+}
+
+QPushButton[uiClass="agentsCopyIconBtn"][copied="true"][copySize="13"] {
+    font-size: 13px;
+}
+
+QLabel[uiClass="agentsActivitySecondary"] {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsActivityPrimary"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsActivityResource"] {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 13px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsActivityStatus"] {
+    color: {{successGreen}};
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+QLabel[uiClass="agentsActivityStatus"][statusOk="false"] {
+    color: {{errorRed}};
+}
+
+QPushButton[uiClass="agentsActivityResultLink"] {
+    background: transparent;
+    border: none;
+    color: {{solanaGreen}};
+    font-family: {{fontFamily}};
+    font-size: 12px;
+    text-align: left;
+    padding: 0;
+}
+
+QPushButton[uiClass="agentsActivityResultLink"]:hover {
+    color: {{textPrimary}};
+}
+
+QWidget[uiClass="agentsActivityBg"] {
+    background: {{bgGradientEnd}};
+}
+
+#agentsDividerStrong {
+    background: rgba(100, 100, 150, 0.25);
+}
+
+#agentsSeparator {
+    color: rgba(100, 100, 150, 0.15);
+    background: transparent;
+    border: none;
+}
+
+#agentsSeparatorSoft {
+    color: rgba(100, 100, 150, 0.2);
+    background: transparent;
+    border: none;
+}
+
+/* ── Scroll Areas ────────────────────────────────────────────── */
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 6px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+    height: 0;
+}
+
+/* ── List Widgets ─────────────────────────────────────────────── */
+
+QListWidget {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+QListWidget::item {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    margin: 4px 0px;
+}
+
+QListWidget::item:hover {
+    background: {{overlayBg}};
+    border-radius: {{smallRadius}}px;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────────── */
+
+#sidebar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 {{bgGradientStart}}, stop:1 {{bgGradientEnd}});
+}
+
+/* ── Inactive Nav Buttons ─────────────────────────────────────── */
+
+#navButton {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: {{buttonRadius}}px;
+}
+
+#navButton:hover {
+    background: {{hoverBg}};
+}
+
+#navButton QLabel {
+    background: transparent;
+    border: none;
+}
+
+#navButton #navText {
+    color: {{textSecondary}};
+    font-family: {{fontFamily}};
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#navButton:hover #navText {
+    color: {{textHover}};
+}
+
+/* ── Dashboard Title ──────────────────────────────────────────── */
+
+#dashboardTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: {{textPrimary}};
+}
+
+/* ── Balance Card ─────────────────────────────────────────────── */
+
+#balanceCard {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 {{cardBgStart}}, stop:1 {{cardBgEnd}});
+    border-radius: {{cardRadius}}px;
+    border: 1px solid {{borderSubtle}};
+}
+
+#balanceLabel {
+    color: {{textSecondary}};
+    font-size: 14px;
+}
+
+#balanceAmount {
+    color: {{textPrimary}};
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#changeLabel {
+    color: {{successGreen}};
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ── Chart Placeholder ────────────────────────────────────────── */
+
+#chartPlaceholder {
+    background: {{chartGradient}};
+    border-radius: 12px;
+}
+
+/* ── Bottom Cards (Activity / Staking) ────────────────────────── */
+
+#activityCard, #stakedCard, #networkCard {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 {{cardBgStartLight}}, stop:1 {{cardBgEndLight}});
+    border-radius: {{cardRadius}}px;
+    border: 1px solid {{borderSubtle}};
+}
+
+/* ── Card Titles ──────────────────────────────────────────────── */
+
+#cardTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: {{textPrimary}};
+}
+
+/* ── Card List Items ──────────────────────────────────────────── */
+
+#cardListItem {
+    border-radius: {{smallRadius}}px;
+}
+
+#cardListItem:hover {
+    background: {{overlayBg}};
+}
+
+#listItemTitle {
+    color: {{textPrimary}};
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#listItemSubtitle {
+    color: {{textTertiary}};
+    font-size: 12px;
+}
+
+/* ── Logo Fallback ────────────────────────────────────────────── */
+
+#logoFallback {
+    font-size: 24px;
+    color: {{solanaGreen}};
+    background: {{bgGradientStart}};
+    border-radius: 12px;
+    padding: 12px;
+}
+
+/* ── Transaction Icons ────────────────────────────────────────── */
+
+#txIconPositive {
+    background: {{txIconPositive}};
+    border-radius: {{cardRadius}}px;
+    color: {{textPrimary}};
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#txIconNegative {
+    background: {{txIconNegative}};
+    border-radius: {{cardRadius}}px;
+    color: {{textPrimary}};
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ── Transaction Amounts ─────────────────────────────────────── */
+
+#txAmountPositive {
+    color: {{successGreen}};
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#txAmountNegative {
+    color: {{errorRed}};
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ── Staking Icons ───────────────────────────────────────────── */
+
+#stakingIcon {
+    background: {{stakingIconBg}};
+    border-radius: {{cardRadius}}px;
+}
+
+#stakingIconFallback {
+    background: {{stakingIconFallbackBg}};
+    border-radius: {{cardRadius}}px;
+    color: {{textPrimary}};
+    font-size: 14px;
+    font-weight: 900;
+}
+
+/* ── Staking Amounts ─────────────────────────────────────────── */
+
+#stakingAmount {
+    color: {{successGreen}};
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#stakingPercent {
+    color: {{successGreen}};
+    font-size: 11px;
+}
+
+/* ── Sidebar Logo ────────────────────────────────────────────── */
+
+#sidebarLogo {
+    background: transparent;
+}
+
+/* ── Active Nav Buttons ──────────────────────────────────────── */
+
+#navButtonActive {
+    background: {{activeNavGradient}};
+    border: 1px solid {{borderActive}};
+    border-radius: {{buttonRadius}}px;
+}
+
+#navButtonActive:hover {
+    background: {{activeNavGradientHover}};
+    border: 1px solid {{borderActiveHover}};
+}
+
+#navButtonActive QLabel {
+    background: transparent;
+    border: none;
+}
+
+#navButtonActive #navText {
+    color: {{textPrimary}};
+    font-family: {{fontFamily}};
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#navButtonActiveCompact QLabel {
+    background: transparent;
+    border: none;
+}
+
+#navButtonActiveCompact {
+    background: {{activeNavGradient}};
+    border: 1px solid {{borderActive}};
+    border-radius: 12px;
+}
+
+#navButtonActiveCompact:hover {
+    background: {{activeNavGradientHover}};
+    border: 1px solid {{borderActiveHover}};
+}
+
+/* ── Page Title (placeholder pages) ──────────────────────────── */
+
+#pageTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: {{textPrimary}};
+}
+
+/* ── Styled Checkbox ─────────────────────────────────────────── */
+
+#styledCheckbox {
+    spacing: 10px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    background: transparent;
+    border: none;
+}
+
+#styledCheckbox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(100, 100, 150, 0.5);
+    border-radius: 4px;
+    background: rgba(20, 22, 40, 0.6);
+}
+
+#styledCheckbox::indicator:hover {
+    border-color: rgba(100, 100, 150, 0.8);
+}
+
+#styledCheckbox::indicator:checked {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    image: url(:/icons/ui/checkmark.svg);
+}
+
+#styledCheckbox::indicator:checked:hover {
+    background: #4b92ff;
+    border-color: #4b92ff;
+}
+
+/* Checkbox text variants — objectName stays "styledCheckbox"
+   so all indicator rules above still apply */
+#styledCheckbox[uiClass="check13Dim"] {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}
+
+#styledCheckbox[uiClass="check13"] {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+}
+
+#styledCheckbox[uiClass="check13Strong"] {
+    color: {{textPrimary}};
+    font-size: 13px;
+    font-weight: 600;
+}
